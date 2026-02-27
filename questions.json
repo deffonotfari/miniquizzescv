@@ -3476,26 +3476,215 @@
     },
     "answer": "A"
   },
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "The limitation of the basic Harris detector is that it is not invariant to:",
+      "choices": {
+        "A": "Translation",
+        "B": "Rotation",
+        "C": "Scale changes",
+        "D": "Intensity shifts"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "The scale-adapted Harris detector addresses invariance to:",
+      "choices": {
+        "A": "Colour changes",
+        "B": "Scale changes",
+        "C": "Histogram stretching",
+        "D": "JPEG compression"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "Scale selection in scale-adapted detectors is achieved by:",
+      "choices": {
+        "A": "Using a fixed window size",
+        "B": "Analysing the response across multiple scales",
+        "C": "Applying histogram equalisation",
+        "D": "Using only Sobel filters"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "The Laplacian-based detector relies on:",
+      "choices": {
+        "A": "First derivatives only",
+        "B": "Second derivatives (Laplacian operator)",
+        "C": "Median filtering",
+        "D": "Histogram matching"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "The Laplacian operator is defined as:",
+      "choices": {
+        "A": "Ix + Iy",
+        "B": "Ix^2 + Iy^2",
+        "C": "Ixx + Iyy",
+        "D": "det(M)"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "The Scale-Invariant Feature Transform (SIFT) detector is designed to be invariant to:",
+      "choices": {
+        "A": "Colour space only",
+        "B": "Scale and rotation",
+        "C": "Bit depth",
+        "D": "JPEG compression only"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "SIFT detects keypoints by searching for extrema in:",
+      "choices": {
+        "A": "Histogram bins",
+        "B": "Difference-of-Gaussians (DoG) scale space",
+        "C": "Median filter outputs",
+        "D": "Raw pixel values only"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "Difference-of-Gaussians (DoG) is used in SIFT as an approximation of:",
+      "choices": {
+        "A": "The gradient magnitude",
+        "B": "The Laplacian of Gaussian",
+        "C": "The median filter",
+        "D": "The homography"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "SIFT assigns an orientation to each keypoint in order to achieve:",
+      "choices": {
+        "A": "Colour invariance",
+        "B": "Rotation invariance",
+        "C": "Scale invariance only",
+        "D": "Histogram invariance"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "A SIFT descriptor represents:",
+      "choices": {
+        "A": "A global histogram of the entire image",
+        "B": "Local gradient orientation histograms around a keypoint",
+        "C": "Raw pixel intensities only",
+        "D": "Colour channel averages"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "The dimensionality of a standard SIFT descriptor is:",
+      "choices": {
+        "A": "32",
+        "B": "64",
+        "C": "128",
+        "D": "256"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "Speeded-Up Robust Features (SURF) were introduced to:",
+      "choices": {
+        "A": "Increase descriptor dimensionality",
+        "B": "Provide a faster alternative to SIFT",
+        "C": "Remove scale invariance",
+        "D": "Replace Harris detector only"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "SURF approximates the Hessian matrix using:",
+      "choices": {
+        "A": "Sobel filters",
+        "B": "Box filters and integral images",
+        "C": "Median filters",
+        "D": "Histogram equalisation"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "A feature descriptor is used to:",
+      "choices": {
+        "A": "Estimate image resolution",
+        "B": "Describe the local neighbourhood of a keypoint for matching",
+        "C": "Perform thresholding",
+        "D": "Compute eigenvalues"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "Feature matching consists of:",
+      "choices": {
+        "A": "Comparing descriptor vectors between images",
+        "B": "Matching raw pixel grids directly",
+        "C": "Matching histograms only",
+        "D": "Matching colour spaces"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "After finding correspondences between keypoints, the next step is to:",
+      "choices": {
+        "A": "Apply histogram equalisation",
+        "B": "Estimate the transformation that best aligns the images",
+        "C": "Apply Gaussian blur",
+        "D": "Convert to grayscale"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "The transformation estimated from matched keypoints may be:",
+      "choices": {
+        "A": "Rigid, affine, or projective",
+        "B": "Only translation",
+        "C": "Only colour-based",
+        "D": "Only histogram-based"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "Interest point detection and feature description are separated because:",
+      "choices": {
+        "A": "Detection finds locations, description encodes local appearance",
+        "B": "Detection performs matching",
+        "C": "Description finds corners",
+        "D": "They are mathematically identical"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "Repeatability of a detector refers to:",
+      "choices": {
+        "A": "Number of pixels detected",
+        "B": "Ability to detect the same keypoints under different conditions",
+        "C": "Descriptor dimensionality",
+        "D": "Kernel size"
+      },
+      "answer": "B"
+    },
   {
     "section": "image-matching-interest-point-detection-and-feature-descriptors",
     "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
@@ -3506,5 +3695,357 @@
       "D": "HSV and CMYK"
     },
     "answer": "A"
-  }
+  },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "What is the goal of image matching / registration?",
+      "choices": {
+        "A": "To smooth an image using a Gaussian filter",
+        "B": "To estimate the transformation that aligns two images",
+        "C": "To convert an image from RGB to HSV",
+        "D": "To compute the histogram of an image"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "In pixel-based matching, what is typically optimised?",
+      "choices": {
+        "A": "A similarity metric computed from image pixels",
+        "B": "The number of detected corners",
+        "C": "The kernel size used for filtering",
+        "D": "The bit depth of the image"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "Which expression captures the objective of pixel-based registration?",
+      "choices": {
+        "A": "T* = argmax_T Similarity(I1, T(I2))",
+        "B": "R = det(M) - k(trace(M))^2",
+        "C": "||∇I|| = sqrt(Ix^2 + Iy^2)",
+        "D": "J = K * I"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "Which are examples of similarity metrics used in pixel-based matching?",
+      "choices": {
+        "A": "Sobel and Laplacian",
+        "B": "Sum of Squared Differences (SSD) and Mutual Information (MI)",
+        "C": "Median and Gaussian",
+        "D": "Non-maximum suppression and hysteresis"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "Matching by edges aligns images using:",
+      "choices": {
+        "A": "Only colour histograms",
+        "B": "Edge maps extracted from images",
+        "C": "Raw pixel intensities only",
+        "D": "Only bit depth information"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "Matching by interest points is efficient mainly because:",
+      "choices": {
+        "A": "It uses all pixels in the image",
+        "B": "It relies on a small set of detected keypoints",
+        "C": "It avoids computing descriptors",
+        "D": "It removes the need for any transformation"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "An interest point is best defined as a point that:",
+      "choices": {
+        "A": "Always lies on the image border",
+        "B": "Has a well-defined position and rich local structure",
+        "C": "Is the brightest pixel in the image",
+        "D": "Has constant intensity in its neighbourhood"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "Repeatability of an interest point detector refers to the ability to:",
+      "choices": {
+        "A": "Detect the same keypoints under different conditions",
+        "B": "Return the same histogram for every image",
+        "C": "Avoid computing image derivatives",
+        "D": "Make descriptors binary"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "A corner is defined as:",
+      "choices": {
+        "A": "A flat region of constant intensity",
+        "B": "An intersection of two edges",
+        "C": "A single isolated pixel",
+        "D": "A region with one dominant gradient direction"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "In a flat region, intensity change occurs:",
+      "choices": {
+        "A": "In no direction",
+        "B": "Only along one direction",
+        "C": "Strongly in two directions",
+        "D": "Only along the diagonal direction"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "In an edge region, intensity change occurs:",
+      "choices": {
+        "A": "In no direction",
+        "B": "Along one direction only",
+        "C": "Along two directions equally",
+        "D": "Only at corners"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "In a corner region, intensity change occurs:",
+      "choices": {
+        "A": "In no direction",
+        "B": "Along one direction only",
+        "C": "Along two directions",
+        "D": "Only along the x-axis"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "The matrix M used by the Harris detector is called:",
+      "choices": {
+        "A": "Homography matrix",
+        "B": "Structure tensor",
+        "C": "Histogram matrix",
+        "D": "Colour transform matrix"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "The structure tensor M is computed from local:",
+      "choices": {
+        "A": "Second derivatives Ixx and Iyy only",
+        "B": "First derivatives Ix and Iy",
+        "C": "Histogram bins",
+        "D": "RGB values only"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "Eigenvalues λ1 and λ2 of the structure tensor are used to classify:",
+      "choices": {
+        "A": "Flat regions, edges, and corners",
+        "B": "Compression formats",
+        "C": "Colour models",
+        "D": "Bit depth"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "If λ1 ≈ 0 and λ2 ≈ 0, the region is:",
+      "choices": {
+        "A": "Corner",
+        "B": "Edge",
+        "C": "Flat",
+        "D": "Keypoint descriptor"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "If λ1 ≫ λ2, the region is:",
+      "choices": {
+        "A": "Flat",
+        "B": "Edge",
+        "C": "Corner",
+        "D": "Blob"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "If λ1 ≈ λ2 and both are large, the region is:",
+      "choices": {
+        "A": "Flat",
+        "B": "Edge",
+        "C": "Corner",
+        "D": "Uniform background"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "What is the Harris cornerness measure?",
+      "choices": {
+        "A": "R = λ1 + λ2",
+        "B": "R = λ1λ2 - k(λ1 + λ2)^2",
+        "C": "R = min(λ1, λ2)",
+        "D": "R = sqrt(Ix^2 + Iy^2)"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "The Harris response can be written as:",
+      "choices": {
+        "A": "R = det(M) - k(trace(M))^2",
+        "B": "R = det(M) + k(trace(M))^2",
+        "C": "R = trace(M) - k det(M)",
+        "D": "R = det(M) / trace(M)"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "The Kanade–Tomasi cornerness measure is defined as:",
+      "choices": {
+        "A": "R = λ1λ2 - k(λ1 + λ2)^2",
+        "B": "R = min(λ1, λ2)",
+        "C": "R = λ1 + λ2",
+        "D": "R = det(M) - trace(M)"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "The Noble cornerness measure is defined as:",
+      "choices": {
+        "A": "R = λ1 - λ2",
+        "B": "R = λ1λ2 / (λ1 + λ2 + ε)",
+        "C": "R = λ1 + λ2",
+        "D": "R = det(M) - k(trace(M))^2"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "Which step is performed first in the Harris detector pipeline?",
+      "choices": {
+        "A": "Thresholding on R",
+        "B": "Compute image derivatives Ix and Iy",
+        "C": "Match descriptors across images",
+        "D": "Estimate a homography"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "After computing the Harris response R, which step is used to localise corners?",
+      "choices": {
+        "A": "Gaussian smoothing only",
+        "B": "Thresholding and non-maximum suppression",
+        "C": "Histogram equalisation",
+        "D": "Median filtering"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "A key limitation of the basic Harris detector is that it is not invariant to:",
+      "choices": {
+        "A": "Translation",
+        "B": "Scale changes",
+        "C": "Rotation",
+        "D": "Brightness offsets"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "The Scale-Invariant Feature Transform (SIFT) is designed to be invariant to:",
+      "choices": {
+        "A": "Scale and rotation",
+        "B": "Bit depth and compression",
+        "C": "Image format and PPI",
+        "D": "Only translation"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "In SIFT, keypoints are detected as extrema in:",
+      "choices": {
+        "A": "Difference-of-Gaussians (DoG) scale space",
+        "B": "Histogram equalised images",
+        "C": "Median-filtered images",
+        "D": "RGB colour cube"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "The SIFT descriptor is primarily based on:",
+      "choices": {
+        "A": "Histograms of pixel intensities",
+        "B": "Histograms of gradient orientations",
+        "C": "Binary edge maps only",
+        "D": "Raw RGB values only"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "Speeded-Up Robust Features (SURF) were introduced mainly to:",
+      "choices": {
+        "A": "Replace edge detection",
+        "B": "Provide a faster alternative to SIFT",
+        "C": "Remove scale invariance",
+        "D": "Avoid using descriptors"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "A feature descriptor is best defined as:",
+      "choices": {
+        "A": "A representation of the local neighbourhood around a keypoint",
+        "B": "A global histogram of the entire image",
+        "C": "A transformation matrix for registration",
+        "D": "A filtering kernel"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "Feature matching typically consists of:",
+      "choices": {
+        "A": "Comparing descriptor vectors between images",
+        "B": "Comparing only image histograms",
+        "C": "Comparing only edge maps",
+        "D": "Comparing only pixel resolutions"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "image-matching-interest-point-detection-and-feature-descriptors",
+      "question": "After finding correspondences between keypoints, the next step is to:",
+      "choices": {
+        "A": "Estimate the transformation that aligns the images",
+        "B": "Convert images to HSV",
+        "C": "Apply a median filter",
+        "D": "Compute a histogram"
+      },
+      "answer": "A"
+    }
 ]
