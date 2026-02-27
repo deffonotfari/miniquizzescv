@@ -10,436 +10,6 @@
     },
     "answer": "A"
   },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "Which statement best defines a digital image in computer vision?",
-      "choices": {
-        "A": "A matrix of colours without mathematical structure",
-        "B": "A multi-dimensional signal that measures a physical quantity",
-        "C": "A collection of JPEG files",
-        "D": "A continuous function over real numbers only"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "Why is an image described as a multi-dimensional signal?",
-      "choices": {
-        "A": "Because it always has three colour channels",
-        "B": "Because it varies over one or more independent variables such as spatial coordinates",
-        "C": "Because it is stored in multiple files",
-        "D": "Because it is compressed"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "A 2D grayscale image mathematically represented as I: Z² → Z means:",
-      "choices": {
-        "A": "Each real-valued coordinate maps to a real intensity",
-        "B": "Each integer spatial coordinate (x,y) maps to a single integer intensity value",
-        "C": "Each pixel contains three colour values",
-        "D": "The image is continuous in space"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "A colour image represented as I: Z² → Z³ implies that:",
-      "choices": {
-        "A": "The image has three spatial dimensions",
-        "B": "Each spatial coordinate maps to three discrete values (e.g., R,G,B)",
-        "C": "The image is volumetric",
-        "D": "The image stores floating point values only"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "In the notation I(x,y), what does (x,y) represent?",
-      "choices": {
-        "A": "Colour channel indices",
-        "B": "Time and intensity",
-        "C": "Spatial pixel coordinates",
-        "D": "Bit depth and resolution"
-      },
-      "answer": "C"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "In a digital image stored as a NumPy array, which index corresponds to rows?",
-      "choices": {
-        "A": "x coordinate",
-        "B": "y coordinate",
-        "C": "Colour channel",
-        "D": "Bit depth"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "Which of the following is an example of a physical quantity that an image may measure?",
-      "choices": {
-        "A": "File size",
-        "B": "Visible light intensity",
-        "C": "Compression ratio",
-        "D": "Matrix dimensions"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "A thermal image differs from a natural photograph because it measures:",
-      "choices": {
-        "A": "Visible RGB light only",
-        "B": "Temperature-related electromagnetic radiation",
-        "C": "File compression artefacts",
-        "D": "Pixel density"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "An ultrasound image represents which physical quantity?",
-      "choices": {
-        "A": "Visible light",
-        "B": "Acoustic properties",
-        "C": "Magnetic flux",
-        "D": "Colour saturation"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "A video represented as I(x,y,t) is considered 3D because:",
-      "choices": {
-        "A": "It has RGB channels",
-        "B": "It includes time as an additional dimension",
-        "C": "It measures depth",
-        "D": "It is stored in 3 files"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "What is the key difference between a 3D volumetric image I(x,y,z) and a video I(x,y,t)?",
-      "choices": {
-        "A": "Volumetric images store colour only",
-        "B": "Video uses time as the third dimension, volumetric images use spatial depth",
-        "C": "Video is grayscale only",
-        "D": "Volumetric images cannot be digital"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "How are grayscale images typically represented digitally?",
-      "choices": {
-        "A": "As three stacked matrices",
-        "B": "As a 2D array where each pixel stores one intensity value",
-        "C": "As floating continuous functions",
-        "D": "As binary text"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "How are colour images typically represented digitally?",
-      "choices": {
-        "A": "As three 2D arrays stacked along a third channel dimension",
-        "B": "As one 2D array with floating point entries only",
-        "C": "As binary matrices",
-        "D": "As continuous signals"
-      },
-      "answer": "A"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "Why is light considered a continuous signal before digitisation?",
-      "choices": {
-        "A": "Because it already exists in pixels",
-        "B": "Because its intensity varies smoothly over space",
-        "C": "Because it is stored digitally",
-        "D": "Because it is compressed"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "Spatial sampling converts:",
-      "choices": {
-        "A": "Continuous intensity values into discrete intensity levels",
-        "B": "Continuous spatial coordinates into discrete pixel locations",
-        "C": "Colour into grayscale",
-        "D": "RGB into CMYK"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "Quantisation converts:",
-      "choices": {
-        "A": "Continuous spatial coordinates into integers",
-        "B": "Continuous intensity values into a finite set of discrete levels",
-        "C": "RGB into HSV",
-        "D": "Video into images"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "Which step occurs first when converting light into a digital image?",
-      "choices": {
-        "A": "Quantisation",
-        "B": "Compression",
-        "C": "Spatial sampling",
-        "D": "Histogram equalisation"
-      },
-      "answer": "C"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "In a digital camera, what physically happens when light hits the sensor?",
-      "choices": {
-        "A": "Light is stored directly as RGB numbers",
-        "B": "Light is converted into electrical signals via the photoelectric effect",
-        "C": "Light becomes binary automatically",
-        "D": "Light is compressed into JPEG"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "If spatial sampling is increased (more pixels per area), what improves?",
-      "choices": {
-        "A": "Intensity precision",
-        "B": "Spatial resolution",
-        "C": "Bit depth",
-        "D": "Dynamic range"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "If quantisation levels are increased (more bits), what improves?",
-      "choices": {
-        "A": "Number of pixels",
-        "B": "Dynamic range and intensity precision",
-        "C": "Image width",
-        "D": "Camera lens size"
-      },
-      "answer": "B"
-    },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "What type of signal is the light impinging on the image sensor before digitisation?",
-        "choices": {
-          "A": "A temporally discrete signal",
-          "B": "A spatially continuous analogue signal",
-          "C": "A quantised digital signal",
-          "D": "A binary signal"
-        },
-        "answer": "B"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "Why is light arriving at the camera sensor considered spatially continuous?",
-        "choices": {
-          "A": "Because it is already divided into pixels",
-          "B": "Because intensity varies smoothly across space before sampling",
-          "C": "Because it is stored as uint8 values",
-          "D": "Because it has three colour channels"
-        },
-        "answer": "B"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "After analogue-to-digital conversion, a digital image can be most accurately described as:",
-        "choices": {
-          "A": "A continuous function of real numbers",
-          "B": "A matrix (array) of pixel values",
-          "C": "A compressed JPEG stream only",
-          "D": "A binary text file"
-        },
-        "answer": "B"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "Which of the following best describes a digital signal in imaging?",
-        "choices": {
-          "A": "A spatially continuous distribution of light",
-          "B": "A discrete grid of sampled intensity values",
-          "C": "An infinite-resolution representation",
-          "D": "An analogue electrical current"
-        },
-        "answer": "B"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "Where does spatial sampling physically occur in a digital camera?",
-        "choices": {
-          "A": "Inside the JPEG encoder",
-          "B": "On the image sensor grid",
-          "C": "During file compression",
-          "D": "Inside the display screen"
-        },
-        "answer": "B"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "Spatial sampling converts:",
-        "choices": {
-          "A": "Continuous spatial coordinates into discrete pixel locations",
-          "B": "Continuous intensities into discrete levels",
-          "C": "RGB into grayscale",
-          "D": "Video into frames"
-        },
-        "answer": "A"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "If spatial sampling is insufficient (too few sensor elements), what phenomenon may occur?",
-        "choices": {
-          "A": "Increased dynamic range",
-          "B": "Aliasing and loss of spatial detail",
-          "C": "Higher bit depth",
-          "D": "Improved colour accuracy"
-        },
-        "answer": "B"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "Where does quantisation occur in the image acquisition pipeline?",
-        "choices": {
-          "A": "At the lens surface",
-          "B": "In the analogue-to-digital converter inside the camera",
-          "C": "In the colour filter array",
-          "D": "During histogram equalisation"
-        },
-        "answer": "B"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "Quantisation is primarily performed by which component?",
-        "choices": {
-          "A": "The image sensor grid",
-          "B": "The analogue-to-digital converter (ADC)",
-          "C": "The Bayer filter",
-          "D": "The display monitor"
-        },
-        "answer": "B"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "Quantisation converts:",
-        "choices": {
-          "A": "Continuous spatial locations into discrete coordinates",
-          "B": "Continuous electrical signals into a finite set of digital intensity levels",
-          "C": "Colour channels into grayscale",
-          "D": "RAW images into JPEG"
-        },
-        "answer": "B"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "If quantisation uses 8 bits per pixel, how many intensity levels are available?",
-        "choices": {
-          "A": "8",
-          "B": "64",
-          "C": "256",
-          "D": "1024"
-        },
-        "answer": "C"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "Which step happens first when forming a digital image from light?",
-        "choices": {
-          "A": "Quantisation",
-          "B": "Spatial sampling",
-          "C": "JPEG compression",
-          "D": "Histogram equalisation"
-        },
-        "answer": "B"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "Which statement correctly describes the full pipeline from light to digital pixels?",
-        "choices": {
-          "A": "Light → JPEG compression → sensor grid → ADC",
-          "B": "Light → spatial sampling at sensor → electrical signal → quantisation in ADC",
-          "C": "Light → histogram → quantisation → RGB",
-          "D": "Light → HSV conversion → ADC"
-        },
-        "answer": "B"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "If spatial sampling increases but quantisation remains constant, which improves?",
-        "choices": {
-          "A": "Dynamic range",
-          "B": "Spatial detail",
-          "C": "Intensity precision",
-          "D": "Bit depth"
-        },
-        "answer": "B"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "If quantisation bit depth increases but spatial sampling remains constant, which improves?",
-        "choices": {
-          "A": "Spatial resolution",
-          "B": "Dynamic range and intensity precision",
-          "C": "Number of pixels",
-          "D": "Frame rate"
-        },
-        "answer": "B"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "Why does quantisation inherently introduce information loss?",
-        "choices": {
-          "A": "Because pixels are continuous",
-          "B": "Because multiple analogue values are mapped to the same discrete level",
-          "C": "Because colour channels are removed",
-          "D": "Because JPEG compression is applied"
-        },
-        "answer": "B"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "Which statement distinguishes spatial sampling from quantisation?",
-        "choices": {
-          "A": "Sampling discretises space; quantisation discretises intensity",
-          "B": "Sampling discretises intensity; quantisation discretises space",
-          "C": "They are identical processes",
-          "D": "Both occur only during compression"
-        },
-        "answer": "A"
-      },
-      {
-        "section": "digital-images-and-image-processing",
-        "question": "In practical terms, a digital image stored on a computer is best understood as:",
-        "choices": {
-          "A": "A grid of discrete numerical values",
-          "B": "A continuous light field",
-          "C": "An analogue voltage pattern",
-          "D": "A physical photograph"
-        },
-        "answer": "A"
-      },
-
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "A grayscale digital image defined as I: Z² → Z means:",
-    "choices": {
-      "A": "Each integer spatial coordinate (x,y) maps to one discrete intensity value.",
-      "B": "Each real coordinate maps to a real intensity value.",
-      "C": "Each pixel stores three colour values.",
-      "D": "The image is a continuous function over space."
-    },
-    "answer": "A"
-  },
   {
     "section": "digital-images-and-image-processing",
     "question": "A colour digital image defined as I: Z² → Z³ implies that:",
@@ -484,182 +54,6 @@
     },
     "answer": "C"
   },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "What does image resolution fundamentally measure?",
-      "choices": {
-        "A": "The number of colour channels in an image",
-        "B": "The detail an image holds",
-        "C": "The file size of the image",
-        "D": "The brightness of the image"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "Which statement best describes image resolution in practical terms?",
-      "choices": {
-        "A": "It determines how many intensity levels are available",
-        "B": "It determines how much spatial detail can be represented",
-        "C": "It determines compression ratio",
-        "D": "It determines colour space"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "What is pixel resolution?",
-      "choices": {
-        "A": "The physical size of each pixel",
-        "B": "The number of bits per pixel",
-        "C": "The image dimensions expressed in pixels (e.g., 1920×1080)",
-        "D": "The dynamic range of the sensor"
-      },
-      "answer": "C"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "An image with resolution 4000×3000 has:",
-      "choices": {
-        "A": "4000 bits per pixel",
-        "B": "4000 rows and 3000 channels",
-        "C": "4000 columns and 3000 rows of pixels",
-        "D": "4000 intensity levels"
-      },
-      "answer": "C"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "Which of the following would increase pixel resolution?",
-      "choices": {
-        "A": "Increasing bit depth",
-        "B": "Increasing the number of pixels in width and height",
-        "C": "Applying histogram equalisation",
-        "D": "Changing colour space"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "What is spatial resolution?",
-      "choices": {
-        "A": "The number of pixels in the image",
-        "B": "The physical size of each pixel in real-world units (e.g., mm per pixel)",
-        "C": "The bit depth of the image",
-        "D": "The number of histogram bins"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "In medical imaging, spatial resolution is often expressed in:",
-      "choices": {
-        "A": "Megapixels",
-        "B": "Bits per channel",
-        "C": "Millimetres per pixel",
-        "D": "Frames per second"
-      },
-      "answer": "C"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "Which situation most requires knowledge of spatial resolution?",
-      "choices": {
-        "A": "Uploading images to social media",
-        "B": "Measuring the size of anatomical structures in a CT scan",
-        "C": "Changing brightness",
-        "D": "Converting RGB to HSV"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "If pixel resolution increases but spatial resolution (mm per pixel) decreases proportionally, what happens?",
-      "choices": {
-        "A": "More spatial detail can be represented",
-        "B": "Dynamic range increases",
-        "C": "Bit depth increases",
-        "D": "Colour accuracy improves"
-      },
-      "answer": "A"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "What does pixel density measure?",
-      "choices": {
-        "A": "Number of bits per pixel",
-        "B": "Number of pixels per unit area",
-        "C": "File size per megabyte",
-        "D": "Histogram frequency"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "Pixel density is most commonly used to describe:",
-      "choices": {
-        "A": "Printing quality",
-        "B": "Screens and camera sensors",
-        "C": "JPEG compression ratio",
-        "D": "Colour depth"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "A screen with higher pixel density will generally:",
-      "choices": {
-        "A": "Display fewer colours",
-        "B": "Display sharper images at the same physical size",
-        "C": "Reduce dynamic range",
-        "D": "Increase file size"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "What is pixels per inch (PPI) primarily used for?",
-      "choices": {
-        "A": "Measuring histogram distribution",
-        "B": "Determining display refresh rate",
-        "C": "Specifying print resolution",
-        "D": "Measuring sensor voltage"
-      },
-      "answer": "C"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "If an image has 300 PPI when printed, this means:",
-      "choices": {
-        "A": "There are 300 bits per pixel",
-        "B": "300 pixels are printed per inch of paper",
-        "C": "300 colour channels exist",
-        "D": "The image width is 300 pixels"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "Which of the following does NOT directly affect pixel resolution?",
-      "choices": {
-        "A": "Number of columns",
-        "B": "Number of rows",
-        "C": "Bit depth",
-        "D": "Sensor grid dimensions"
-      },
-      "answer": "C"
-    },
-    {
-      "section": "digital-images-and-image-processing",
-      "question": "Which of the following does NOT directly affect spatial resolution?",
-      "choices": {
-        "A": "Physical pixel size",
-        "B": "Sensor element spacing",
-        "C": "Bit depth",
-        "D": "Imaging geometry"
-      },
-      "answer": "C"
-    },
   {
     "section": "digital-images-and-image-processing",
     "question": "Spatial sampling converts:",
@@ -681,6 +75,17 @@
       "D": "A colour image into grayscale"
     },
     "answer": "C"
+  },
+  {
+    "section": "digital-images-and-image-processing",
+    "question": "What does quantisation do?",
+    "choices": {
+      "A": "Continuous spatial coordinates into pixel indices",
+      "B": "Discrete pixel indices into continuous coordinates",
+      "C": "Continuous signal amplitudes into a finite set of discrete levels",
+      "D": "It limits the values a pixel can have to a finite set"
+    },
+    "answer": "D"
   },
   {
     "section": "digital-images-and-image-processing",
@@ -761,17 +166,6 @@
   },
   {
     "section": "digital-images-and-image-processing",
-    "question": "An image stored with 16 bits per pixel can represent how many distinct intensity levels per channel?",
-    "choices": {
-      "A": "65536",
-      "B": "32",
-      "C": "256",
-      "D": "32768"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
     "question": "Increasing bit depth (with the same spatial sampling) most directly increases:",
     "choices": {
       "A": "Field of view",
@@ -842,7 +236,7 @@
     "choices": {
       "A": "Pixels per inch on paper",
       "B": "Bits per pixel",
-      "C": "Physical size represented by each pixel (e.g., mm/pixel)",
+      "C": "Size represented by each pixel (e.g., mm/pixel)",
       "D": "Total number of pixels"
     },
     "answer": "C"
@@ -1146,83 +540,6 @@
   },
   {
     "section": "digital-images-and-image-processing",
-    "question": "An image of size 1920×1080 contains how many pixels?",
-    "choices": {
-      "A": "2073600",
-      "B": "3000",
-      "C": "6220800",
-      "D": "259200"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "An image of size 3840×2160 contains how many pixels?",
-    "choices": {
-      "A": "8294400",
-      "B": "6000",
-      "C": "24883200",
-      "D": "1036800"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "An image of size 1024×768 contains how many pixels?",
-    "choices": {
-      "A": "786432",
-      "B": "1792",
-      "C": "2359296",
-      "D": "98304"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "An image of size 4000×3000 contains how many pixels?",
-    "choices": {
-      "A": "12000000",
-      "B": "7000",
-      "C": "36000000",
-      "D": "1500000"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "If you print the same 3000×2000 image at higher PPI, the printed image becomes:",
-    "choices": {
-      "A": "Physically smaller on paper",
-      "B": "Physically larger on paper",
-      "C": "Higher bit depth",
-      "D": "More pixels in the file"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement best distinguishes pixel resolution from spatial resolution?",
-    "choices": {
-      "A": "Pixel resolution is measured in pixels; spatial resolution is measured in physical units per pixel (e.g., mm/pixel)",
-      "B": "Pixel resolution is measured in mm/pixel; spatial resolution in pixels",
-      "C": "They mean exactly the same thing",
-      "D": "Spatial resolution refers only to colour depth"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which of the following is an example of a position-independent operation from the lecture?",
-    "choices": {
-      "A": "Gamma correction",
-      "B": "Convolution with a 5×5 kernel",
-      "C": "Affine warping",
-      "D": "Canny edge detection"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
     "question": "Which statement is correct about RAW vs processed images?",
     "choices": {
       "A": "RAW typically stores minimally processed sensor measurements, while processed images apply steps like white balance and tone mapping",
@@ -1265,556 +582,556 @@
     },
     "answer": "A"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which of the following is an example of a position-independent operation from the lecture?",
-    "choices": {
-      "A": "Gamma correction",
-      "B": "Convolution with a 5×5 kernel",
-      "C": "Affine warping",
-      "D": "Canny edge detection"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "What is image filtering?",
+      "choices": {
+        "A": "Changing image resolution",
+        "B": "Removing unwanted components or enhancing desired ones in an image",
+        "C": "Transforming colour spaces",
+        "D": "Estimating affine transformations"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement is correct about RAW vs processed images?",
-    "choices": {
-      "A": "RAW typically stores minimally processed sensor measurements, while processed images apply steps like white balance and tone mapping",
-      "B": "RAW is always smaller than JPEG",
-      "C": "Processed images cannot be colour",
-      "D": "RAW images cannot be displayed"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "What is window-based image filtering?",
+      "choices": {
+        "A": "Filtering using histogram bins",
+        "B": "Computing each output pixel from a neighbourhood defined by an N×N window",
+        "C": "Filtering using Fourier transforms",
+        "D": "Resizing the image"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "A key reason to use float images during processing is to:",
-    "choices": {
-      "A": "Avoid clipping/quantisation during intermediate computations",
-      "B": "Increase sensor pixel density",
-      "C": "Increase PPI when printing",
-      "D": "Make the image additive"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "When is filtering considered linear?",
+      "choices": {
+        "A": "When the output is the median of the window",
+        "B": "When output pixels are linear combinations of neighbourhood pixels with fixed weights",
+        "C": "When kernel values change per pixel",
+        "D": "When σ is large"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "If you print the same 3000×2000 image at higher PPI, the printed image becomes:",
-    "choices": {
-      "A": "Physically smaller on paper",
-      "B": "Physically larger on paper",
-      "C": "Higher bit depth",
-      "D": "More pixels in the file"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "What is a kernel in linear filtering?",
+      "choices": {
+        "A": "A histogram",
+        "B": "A matrix of weights used to compute linear combinations of pixel values",
+        "C": "A colour channel",
+        "D": "A gradient map"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement best distinguishes pixel resolution from spatial resolution?",
-    "choices": {
-      "A": "Pixel resolution is measured in pixels; spatial resolution is measured in physical units per pixel (e.g., mm/pixel)",
-      "B": "Pixel resolution is measured in mm/pixel; spatial resolution in pixels",
-      "C": "They mean exactly the same thing",
-      "D": "Spatial resolution refers only to colour depth"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "What is convolution in image processing?",
+      "choices": {
+        "A": "A non-linear filtering method",
+        "B": "The act of moving a linear kernel over an image to compute weighted sums",
+        "C": "Histogram stretching",
+        "D": "Colour normalisation"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which of the following is an example of a position-independent operation from the lecture?",
-    "choices": {
-      "A": "Gamma correction",
-      "B": "Convolution with a 5×5 kernel",
-      "C": "Affine warping",
-      "D": "Canny edge detection"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "Which property states that K * I = I * K?",
+      "choices": {
+        "A": "Associative",
+        "B": "Distributive",
+        "C": "Commutative",
+        "D": "Non-linear"
+      },
+      "answer": "C"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement is correct about RAW vs processed images?",
-    "choices": {
-      "A": "RAW typically stores minimally processed sensor measurements, while processed images apply steps like white balance and tone mapping",
-      "B": "RAW is always smaller than JPEG",
-      "C": "Processed images cannot be colour",
-      "D": "RAW images cannot be displayed"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "Which property states that K1 * I + K2 * I = (K1 + K2) * I?",
+      "choices": {
+        "A": "Associative",
+        "B": "Commutative",
+        "C": "Distributive",
+        "D": "Linear scaling"
+      },
+      "answer": "C"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "A key reason to use float images during processing is to:",
-    "choices": {
-      "A": "Avoid clipping/quantisation during intermediate computations",
-      "B": "Increase sensor pixel density",
-      "C": "Increase PPI when printing",
-      "D": "Make the image additive"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "What is zero padding in edge handling?",
+      "choices": {
+        "A": "Removing border pixels",
+        "B": "Extending the image using zeros",
+        "C": "Wrapping image borders",
+        "D": "Blurring edges"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "If you print the same 3000×2000 image at higher PPI, the printed image becomes:",
-    "choices": {
-      "A": "Physically smaller on paper",
-      "B": "Physically larger on paper",
-      "C": "Higher bit depth",
-      "D": "More pixels in the file"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "What does kernel normalisation ensure?",
+      "choices": {
+        "A": "Edges are sharper",
+        "B": "Sum of kernel elements equals 1, preserving average intensity",
+        "C": "Kernel becomes integer-valued",
+        "D": "Noise is removed"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement best distinguishes pixel resolution from spatial resolution?",
-    "choices": {
-      "A": "Pixel resolution is measured in pixels; spatial resolution is measured in physical units per pixel (e.g., mm/pixel)",
-      "B": "Pixel resolution is measured in mm/pixel; spatial resolution in pixels",
-      "C": "They mean exactly the same thing",
-      "D": "Spatial resolution refers only to colour depth"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "Why can filtering with uint8 cause unwanted effects?",
+      "choices": {
+        "A": "It increases spatial resolution",
+        "B": "Clipping and quantisation may cause loss of precision",
+        "C": "It makes convolution non-linear",
+        "D": "It changes kernel size"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which of the following is an example of a position-independent operation from the lecture?",
-    "choices": {
-      "A": "Gamma correction",
-      "B": "Convolution with a 5×5 kernel",
-      "C": "Affine warping",
-      "D": "Canny edge detection"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "What is the identity filter?",
+      "choices": {
+        "A": "A kernel of zeros",
+        "B": "A kernel with a 1 in the centre and zeros elsewhere",
+        "C": "A Gaussian filter",
+        "D": "A sharpening filter"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement is correct about RAW vs processed images?",
-    "choices": {
-      "A": "RAW typically stores minimally processed sensor measurements, while processed images apply steps like white balance and tone mapping",
-      "B": "RAW is always smaller than JPEG",
-      "C": "Processed images cannot be colour",
-      "D": "RAW images cannot be displayed"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "What is the moving average (box) filter?",
+      "choices": {
+        "A": "Median of neighbourhood",
+        "B": "Kernel of ones divided by number of elements, computing average",
+        "C": "Gaussian kernel",
+        "D": "Edge detector"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "A key reason to use float images during processing is to:",
-    "choices": {
-      "A": "Avoid clipping/quantisation during intermediate computations",
-      "B": "Increase sensor pixel density",
-      "C": "Increase PPI when printing",
-      "D": "Make the image additive"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "What characterises the Gaussian filter?",
+      "choices": {
+        "A": "Equal weights",
+        "B": "Weights sampled from a 2D Gaussian distribution with highest weight at centre",
+        "C": "Binary mask",
+        "D": "Median selection"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "If you print the same 3000×2000 image at higher PPI, the printed image becomes:",
-    "choices": {
-      "A": "Physically smaller on paper",
-      "B": "Physically larger on paper",
-      "C": "Higher bit depth",
-      "D": "More pixels in the file"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "What does σ control in Gaussian filtering?",
+      "choices": {
+        "A": "Image resolution",
+        "B": "Amount of blurring",
+        "C": "Edge thickness",
+        "D": "Kernel symmetry"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement best distinguishes pixel resolution from spatial resolution?",
-    "choices": {
-      "A": "Pixel resolution is measured in pixels; spatial resolution is measured in physical units per pixel (e.g., mm/pixel)",
-      "B": "Pixel resolution is measured in mm/pixel; spatial resolution in pixels",
-      "C": "They mean exactly the same thing",
-      "D": "Spatial resolution refers only to colour depth"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "What is the purpose of a sharpening filter?",
+      "choices": {
+        "A": "Blur the image",
+        "B": "Make edges more pronounced by adding image details",
+        "C": "Reduce bit depth",
+        "D": "Remove histogram peaks"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which of the following is an example of a position-independent operation from the lecture?",
-    "choices": {
-      "A": "Gamma correction",
-      "B": "Convolution with a 5×5 kernel",
-      "C": "Affine warping",
-      "D": "Canny edge detection"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "What defines non-linear filtering?",
+      "choices": {
+        "A": "Representable via convolution",
+        "B": "Cannot be represented as convolution",
+        "C": "Uses Gaussian weights",
+        "D": "Uses normalised kernel"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement is correct about RAW vs processed images?",
-    "choices": {
-      "A": "RAW typically stores minimally processed sensor measurements, while processed images apply steps like white balance and tone mapping",
-      "B": "RAW is always smaller than JPEG",
-      "C": "Processed images cannot be colour",
-      "D": "RAW images cannot be displayed"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "What is the median filter?",
+      "choices": {
+        "A": "Computes weighted average",
+        "B": "Output pixel equals median of neighbourhood values",
+        "C": "Computes second derivative",
+        "D": "Normalises intensity"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "A key reason to use float images during processing is to:",
-    "choices": {
-      "A": "Avoid clipping/quantisation during intermediate computations",
-      "B": "Increase sensor pixel density",
-      "C": "Increase PPI when printing",
-      "D": "Make the image additive"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "Why is the median filter effective against salt & pepper noise?",
+      "choices": {
+        "A": "It averages out extremes",
+        "B": "It ignores extreme values when selecting the median",
+        "C": "It sharpens edges",
+        "D": "It uses Gaussian weights"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "If you print the same 3000×2000 image at higher PPI, the printed image becomes:",
-    "choices": {
-      "A": "Physically smaller on paper",
-      "B": "Physically larger on paper",
-      "C": "Higher bit depth",
-      "D": "More pixels in the file"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "What is edge detection?",
+      "choices": {
+        "A": "Detecting colour changes only",
+        "B": "Identifying locations of significant intensity change",
+        "C": "Computing histogram",
+        "D": "Applying smoothing"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement best distinguishes pixel resolution from spatial resolution?",
-    "choices": {
-      "A": "Pixel resolution is measured in pixels; spatial resolution is measured in physical units per pixel (e.g., mm/pixel)",
-      "B": "Pixel resolution is measured in mm/pixel; spatial resolution in pixels",
-      "C": "They mean exactly the same thing",
-      "D": "Spatial resolution refers only to colour depth"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "Gradient-based edge detection is based on:",
+      "choices": {
+        "A": "Second derivative",
+        "B": "First derivative of intensity",
+        "C": "Median filter",
+        "D": "Kernel normalisation"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which of the following is an example of a position-independent operation from the lecture?",
-    "choices": {
-      "A": "Gamma correction",
-      "B": "Convolution with a 5×5 kernel",
-      "C": "Affine warping",
-      "D": "Canny edge detection"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "Laplacian-based edge detection uses:",
+      "choices": {
+        "A": "First derivative",
+        "B": "Second derivative",
+        "C": "Gaussian smoothing only",
+        "D": "Median filter"
+      },
+      "answer": "B"
     },
-    "answer": "A"
-  },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement is correct about RAW vs processed images?",
-    "choices": {
-      "A": "RAW typically stores minimally processed sensor measurements, while processed images apply steps like white balance and tone mapping",
-      "B": "RAW is always smaller than JPEG",
-      "C": "Processed images cannot be colour",
-      "D": "RAW images cannot be displayed"
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "What does non-maximum suppression do?",
+      "choices": {
+        "A": "Blurs edges",
+        "B": "Keeps only local maxima along gradient direction",
+        "C": "Normalises intensities",
+        "D": "Applies Gaussian blur"
+      },
+      "answer": "B"
     },
-    "answer": "A"
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "What is the primary goal of image filtering according to the lecture?",
+  "choices": {
+    "A": "To increase pixel resolution",
+    "B": "To remove unwanted components or enhance desired ones",
+    "C": "To change colour space",
+    "D": "To convert analogue signals into digital"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "A key reason to use float images during processing is to:",
-    "choices": {
-      "A": "Avoid clipping/quantisation during intermediate computations",
-      "B": "Increase sensor pixel density",
-      "C": "Increase PPI when printing",
-      "D": "Make the image additive"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Filtering can be applied to colour images by:",
+  "choices": {
+    "A": "Filtering only the red channel",
+    "B": "Filtering each channel separately or filtering the V channel in HSV",
+    "C": "Converting to CMYK first",
+    "D": "Removing two channels"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "If you print the same 3000×2000 image at higher PPI, the printed image becomes:",
-    "choices": {
-      "A": "Physically smaller on paper",
-      "B": "Physically larger on paper",
-      "C": "Higher bit depth",
-      "D": "More pixels in the file"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "In window-based image filtering, the output pixel J(x,y) depends on:",
+  "choices": {
+    "A": "Only the pixel I(x,y)",
+    "B": "A neighbourhood of pixels around (x,y)",
+    "C": "The histogram only",
+    "D": "The entire image"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement best distinguishes pixel resolution from spatial resolution?",
-    "choices": {
-      "A": "Pixel resolution is measured in pixels; spatial resolution is measured in physical units per pixel (e.g., mm/pixel)",
-      "B": "Pixel resolution is measured in mm/pixel; spatial resolution in pixels",
-      "C": "They mean exactly the same thing",
-      "D": "Spatial resolution refers only to colour depth"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "What defines the neighbourhood in window-based filtering?",
+  "choices": {
+    "A": "Histogram bins",
+    "B": "Kernel normalisation",
+    "C": "A window of size N × N",
+    "D": "Bit depth"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which of the following is an example of a position-independent operation from the lecture?",
-    "choices": {
-      "A": "Gamma correction",
-      "B": "Convolution with a 5×5 kernel",
-      "C": "Affine warping",
-      "D": "Canny edge detection"
-    },
-    "answer": "A"
+  "answer": "C"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Linear filtering requires that:",
+  "choices": {
+    "A": "The output is the median of neighbours",
+    "B": "Pixel values are a linear combination of neighbours with fixed weights",
+    "C": "The kernel changes per pixel",
+    "D": "The image is grayscale"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement is correct about RAW vs processed images?",
-    "choices": {
-      "A": "RAW typically stores minimally processed sensor measurements, while processed images apply steps like white balance and tone mapping",
-      "B": "RAW is always smaller than JPEG",
-      "C": "Processed images cannot be colour",
-      "D": "RAW images cannot be displayed"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "The matrix of weights used in linear filtering is called:",
+  "choices": {
+    "A": "Footprint",
+    "B": "Histogram",
+    "C": "Kernel",
+    "D": "CDF"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "A key reason to use float images during processing is to:",
-    "choices": {
-      "A": "Avoid clipping/quantisation during intermediate computations",
-      "B": "Increase sensor pixel density",
-      "C": "Increase PPI when printing",
-      "D": "Make the image additive"
-    },
-    "answer": "A"
+  "answer": "C"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "The mathematical expression J(x,y) = Σ K(n,m) I(x+n, y+m) describes:",
+  "choices": {
+    "A": "Median filtering",
+    "B": "Convolution (linear filtering)",
+    "C": "Histogram equalisation",
+    "D": "Gamma correction"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "If you print the same 3000×2000 image at higher PPI, the printed image becomes:",
-    "choices": {
-      "A": "Physically smaller on paper",
-      "B": "Physically larger on paper",
-      "C": "Higher bit depth",
-      "D": "More pixels in the file"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Technically, the formula shown in the slides corresponds to:",
+  "choices": {
+    "A": "True convolution with flipped kernel",
+    "B": "Cross-correlation",
+    "C": "Fourier transform",
+    "D": "Median filtering"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement best distinguishes pixel resolution from spatial resolution?",
-    "choices": {
-      "A": "Pixel resolution is measured in pixels; spatial resolution is measured in physical units per pixel (e.g., mm/pixel)",
-      "B": "Pixel resolution is measured in mm/pixel; spatial resolution in pixels",
-      "C": "They mean exactly the same thing",
-      "D": "Spatial resolution refers only to colour depth"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Which property allows decomposition of a 2D kernel into two 1D kernels?",
+  "choices": {
+    "A": "Quantisation",
+    "B": "Separability due to convolution properties",
+    "C": "Median invariance",
+    "D": "Histogram symmetry"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which of the following is an example of a position-independent operation from the lecture?",
-    "choices": {
-      "A": "Gamma correction",
-      "B": "Convolution with a 5×5 kernel",
-      "C": "Affine warping",
-      "D": "Canny edge detection"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Which is NOT a property of convolution?",
+  "choices": {
+    "A": "Commutative",
+    "B": "Distributive",
+    "C": "Associative",
+    "D": "Non-linear"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement is correct about RAW vs processed images?",
-    "choices": {
-      "A": "RAW typically stores minimally processed sensor measurements, while processed images apply steps like white balance and tone mapping",
-      "B": "RAW is always smaller than JPEG",
-      "C": "Processed images cannot be colour",
-      "D": "RAW images cannot be displayed"
-    },
-    "answer": "A"
+  "answer": "D"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Zero padding handles edges by:",
+  "choices": {
+    "A": "Replicating nearest border pixels",
+    "B": "Wrapping pixels from opposite side",
+    "C": "Extending image with zeros",
+    "D": "Reducing image size"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "A key reason to use float images during processing is to:",
-    "choices": {
-      "A": "Avoid clipping/quantisation during intermediate computations",
-      "B": "Increase sensor pixel density",
-      "C": "Increase PPI when printing",
-      "D": "Make the image additive"
-    },
-    "answer": "A"
+  "answer": "C"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Nearest neighbour edge handling:",
+  "choices": {
+    "A": "Uses values from opposite border",
+    "B": "Replicates nearest border pixels",
+    "C": "Fills with zeros",
+    "D": "Removes borders"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "If you print the same 3000×2000 image at higher PPI, the printed image becomes:",
-    "choices": {
-      "A": "Physically smaller on paper",
-      "B": "Physically larger on paper",
-      "C": "Higher bit depth",
-      "D": "More pixels in the file"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Wrapping edge handling:",
+  "choices": {
+    "A": "Uses zero values",
+    "B": "Copies nearest pixel",
+    "C": "Extends using values from opposite side",
+    "D": "Blurs borders"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement best distinguishes pixel resolution from spatial resolution?",
-    "choices": {
-      "A": "Pixel resolution is measured in pixels; spatial resolution is measured in physical units per pixel (e.g., mm/pixel)",
-      "B": "Pixel resolution is measured in mm/pixel; spatial resolution in pixels",
-      "C": "They mean exactly the same thing",
-      "D": "Spatial resolution refers only to colour depth"
-    },
-    "answer": "A"
+  "answer": "C"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "A normalised kernel ensures that:",
+  "choices": {
+    "A": "Edges are sharper",
+    "B": "The average intensity remains unchanged",
+    "C": "Kernel values are integers",
+    "D": "The image becomes binary"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which of the following is an example of a position-independent operation from the lecture?",
-    "choices": {
-      "A": "Gamma correction",
-      "B": "Convolution with a 5×5 kernel",
-      "C": "Affine warping",
-      "D": "Canny edge detection"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Why is it advisable to convert uint8 images to float before filtering?",
+  "choices": {
+    "A": "To increase resolution",
+    "B": "To avoid clipping/quantisation loss of precision",
+    "C": "To reduce memory",
+    "D": "To change colour space"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement is correct about RAW vs processed images?",
-    "choices": {
-      "A": "RAW typically stores minimally processed sensor measurements, while processed images apply steps like white balance and tone mapping",
-      "B": "RAW is always smaller than JPEG",
-      "C": "Processed images cannot be colour",
-      "D": "RAW images cannot be displayed"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "The moving average (box) filter output is:",
+  "choices": {
+    "A": "The maximum of window",
+    "B": "The minimum of window",
+    "C": "The average of pixel values in window",
+    "D": "The central pixel"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "A key reason to use float images during processing is to:",
-    "choices": {
-      "A": "Avoid clipping/quantisation during intermediate computations",
-      "B": "Increase sensor pixel density",
-      "C": "Increase PPI when printing",
-      "D": "Make the image additive"
-    },
-    "answer": "A"
+  "answer": "C"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Increasing the box filter size primarily:",
+  "choices": {
+    "A": "Reduces smoothing",
+    "B": "Increases blurring and removes more detail",
+    "C": "Increases edge sharpness",
+    "D": "Changes dynamic range"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "If you print the same 3000×2000 image at higher PPI, the printed image becomes:",
-    "choices": {
-      "A": "Physically smaller on paper",
-      "B": "Physically larger on paper",
-      "C": "Higher bit depth",
-      "D": "More pixels in the file"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "In a Gaussian filter, the central pixel weight is:",
+  "choices": {
+    "A": "Smallest",
+    "B": "Equal to others",
+    "C": "Largest",
+    "D": "Zero"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement best distinguishes pixel resolution from spatial resolution?",
-    "choices": {
-      "A": "Pixel resolution is measured in pixels; spatial resolution is measured in physical units per pixel (e.g., mm/pixel)",
-      "B": "Pixel resolution is measured in mm/pixel; spatial resolution in pixels",
-      "C": "They mean exactly the same thing",
-      "D": "Spatial resolution refers only to colour depth"
-    },
-    "answer": "A"
+  "answer": "C"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "The parameter σ in Gaussian filtering controls:",
+  "choices": {
+    "A": "Kernel size only",
+    "B": "Amount of blurring",
+    "C": "Edge direction",
+    "D": "Bit depth"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which of the following is an example of a position-independent operation from the lecture?",
-    "choices": {
-      "A": "Gamma correction",
-      "B": "Convolution with a 5×5 kernel",
-      "C": "Affine warping",
-      "D": "Canny edge detection"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Sharpening filters enhance:",
+  "choices": {
+    "A": "Low-frequency components",
+    "B": "Image details (differences from local average)",
+    "C": "Noise only",
+    "D": "Histogram bins"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement is correct about RAW vs processed images?",
-    "choices": {
-      "A": "RAW typically stores minimally processed sensor measurements, while processed images apply steps like white balance and tone mapping",
-      "B": "RAW is always smaller than JPEG",
-      "C": "Processed images cannot be colour",
-      "D": "RAW images cannot be displayed"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "The median filter is considered non-linear because:",
+  "choices": {
+    "A": "It uses convolution",
+    "B": "The output is not a linear combination of inputs",
+    "C": "It uses Gaussian weights",
+    "D": "It preserves intensity sum"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "A key reason to use float images during processing is to:",
-    "choices": {
-      "A": "Avoid clipping/quantisation during intermediate computations",
-      "B": "Increase sensor pixel density",
-      "C": "Increase PPI when printing",
-      "D": "Make the image additive"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Median filtering is particularly effective against:",
+  "choices": {
+    "A": "Gaussian blur",
+    "B": "Salt & pepper noise",
+    "C": "Lens distortion",
+    "D": "Low resolution"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "If you print the same 3000×2000 image at higher PPI, the printed image becomes:",
-    "choices": {
-      "A": "Physically smaller on paper",
-      "B": "Physically larger on paper",
-      "C": "Higher bit depth",
-      "D": "More pixels in the file"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "The median filter output pixel equals:",
+  "choices": {
+    "A": "Mean of window",
+    "B": "Central pixel",
+    "C": "Median of values in window",
+    "D": "Maximum value"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement best distinguishes pixel resolution from spatial resolution?",
-    "choices": {
-      "A": "Pixel resolution is measured in pixels; spatial resolution is measured in physical units per pixel (e.g., mm/pixel)",
-      "B": "Pixel resolution is measured in mm/pixel; spatial resolution in pixels",
-      "C": "They mean exactly the same thing",
-      "D": "Spatial resolution refers only to colour depth"
-    },
-    "answer": "A"
+  "answer": "C"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Which filter preserves edges better while removing impulse noise?",
+  "choices": {
+    "A": "Box filter",
+    "B": "Gaussian filter",
+    "C": "Median filter",
+    "D": "Identity filter"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which of the following is an example of a position-independent operation from the lecture?",
-    "choices": {
-      "A": "Gamma correction",
-      "B": "Convolution with a 5×5 kernel",
-      "C": "Affine warping",
-      "D": "Canny edge detection"
-    },
-    "answer": "A"
+  "answer": "C"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Edge detection aims to identify:",
+  "choices": {
+    "A": "Uniform intensity regions",
+    "B": "Locations of significant intensity change",
+    "C": "Histogram peaks",
+    "D": "Colour models"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement is correct about RAW vs processed images?",
-    "choices": {
-      "A": "RAW typically stores minimally processed sensor measurements, while processed images apply steps like white balance and tone mapping",
-      "B": "RAW is always smaller than JPEG",
-      "C": "Processed images cannot be colour",
-      "D": "RAW images cannot be displayed"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Gradient-based edge detection relies on:",
+  "choices": {
+    "A": "Second derivatives",
+    "B": "First derivatives",
+    "C": "Median values",
+    "D": "Histogram equalisation"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "A key reason to use float images during processing is to:",
-    "choices": {
-      "A": "Avoid clipping/quantisation during intermediate computations",
-      "B": "Increase sensor pixel density",
-      "C": "Increase PPI when printing",
-      "D": "Make the image additive"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Laplacian-based edge detection relies on:",
+  "choices": {
+    "A": "First derivative",
+    "B": "Second derivative",
+    "C": "Histogram",
+    "D": "Gaussian blur only"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "If you print the same 3000×2000 image at higher PPI, the printed image becomes:",
-    "choices": {
-      "A": "Physically smaller on paper",
-      "B": "Physically larger on paper",
-      "C": "Higher bit depth",
-      "D": "More pixels in the file"
-    },
-    "answer": "A"
+  "answer": "B"
+},
+{
+  "section": "image-filtering-and-edge-detection",
+  "question": "Non-maximum suppression is used to:",
+  "choices": {
+    "A": "Blur edges",
+    "B": "Thin edges by keeping local maxima in gradient direction",
+    "C": "Normalise kernel",
+    "D": "Extend borders"
   },
-  {
-    "section": "digital-images-and-image-processing",
-    "question": "Which statement best distinguishes pixel resolution from spatial resolution?",
-    "choices": {
-      "A": "Pixel resolution is measured in pixels; spatial resolution is measured in physical units per pixel (e.g., mm/pixel)",
-      "B": "Pixel resolution is measured in mm/pixel; spatial resolution in pixels",
-      "C": "They mean exactly the same thing",
-      "D": "Spatial resolution refers only to colour depth"
-    },
-    "answer": "A"
-  },
+  "answer": "B"
+},
   {
     "section": "image-filtering-and-edge-detection",
     "question": "In window-based image filtering, the output pixel J(x,y) is computed from:",
@@ -2112,6 +1429,21 @@
     },
     "answer": "A"
   },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   {
     "section": "image-filtering-and-edge-detection",
     "question": "In Canny, why is 'single response' a desirable property?",
@@ -2123,6 +1455,307 @@
     },
     "answer": "A"
   },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "In general, filtering allows to:",
+      "choices": {
+        "A": "Increase spatial resolution",
+        "B": "Remove unwanted components from a given signal or enhance some desired ones",
+        "C": "Change image format",
+        "D": "Estimate geometric transformations"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "In window-based image filtering, the value of each pixel (x,y) in the output image J is:",
+      "choices": {
+        "A": "Independent of neighbouring pixels",
+        "B": "A function of the pixel values of the input image I in a neighbourhood of (x,y)",
+        "C": "Only determined by histogram values",
+        "D": "Randomly assigned"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "If the pixel values in the output image are a linear combination of pixel values in a neighbourhood and the weights are fixed for all positions, then we are performing:",
+      "choices": {
+        "A": "Non-linear filtering",
+        "B": "Gradient thresholding",
+        "C": "Linear filtering",
+        "D": "Hysteresis"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "The act of moving a linear kernel on an image is called:",
+      "choices": {
+        "A": "Quantisation",
+        "B": "Convolution",
+        "C": "Normalisation",
+        "D": "Interpolation"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "Filtering with a normalised kernel ensures that:",
+      "choices": {
+        "A": "The image becomes sharper",
+        "B": "The average intensity for the whole image remains unchanged",
+        "C": "The datatype becomes float",
+        "D": "Edges are removed"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "If datatype is uint8 during filtering, values are forced to be integers in the range:",
+      "choices": {
+        "A": "[-1,1]",
+        "B": "[0,1]",
+        "C": "[0,255]",
+        "D": "[-255,255]"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "Why is it advisable to convert to float before filtering?",
+      "choices": {
+        "A": "To change spatial resolution",
+        "B": "To avoid clipping/quantisation and unwanted loss of precision",
+        "C": "To apply HSV conversion",
+        "D": "To increase kernel size"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "The kernel of an identity filter is:",
+      "choices": {
+        "A": "All ones",
+        "B": "All zeros",
+        "C": "A set of 0s with a 1 in the centre",
+        "D": "A Gaussian distribution"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "The output of an identity filter will be:",
+      "choices": {
+        "A": "Blurred",
+        "B": "Equal to the input pixel value",
+        "C": "Binary",
+        "D": "Sharpened"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "The output pixel value of a moving average filter is:",
+      "choices": {
+        "A": "The maximum of the window",
+        "B": "The median of the window",
+        "C": "The average of the pixel values in the window",
+        "D": "The derivative of the window"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "Increasing the footprint size in a moving average filter results in:",
+      "choices": {
+        "A": "Less smoothing",
+        "B": "More smoothing and blurring",
+        "C": "Edge detection",
+        "D": "Higher contrast"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "In a Gaussian filter, the central pixel has:",
+      "choices": {
+        "A": "The lowest weight",
+        "B": "The highest weight",
+        "C": "Zero weight",
+        "D": "Negative weight"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "The standard deviation σ in a Gaussian filter controls:",
+      "choices": {
+        "A": "The image resolution",
+        "B": "The amount of blurring",
+        "C": "The edge threshold",
+        "D": "The datatype"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "A sharpening filter makes:",
+      "choices": {
+        "A": "Noise disappear",
+        "B": "Edges more pronounced",
+        "C": "The image binary",
+        "D": "The image grayscale"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "The median filter output pixel will be:",
+      "choices": {
+        "A": "The average of pixel values",
+        "B": "The median of the pixel values in the window",
+        "C": "The derivative value",
+        "D": "The gradient magnitude"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "The median filter is especially useful in the presence of:",
+      "choices": {
+        "A": "Gaussian blur",
+        "B": "Salt & pepper noise",
+        "C": "Lens distortion",
+        "D": "Compression artefacts"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "Edge detection consists in locating:",
+      "choices": {
+        "A": "Regions of constant intensity",
+        "B": "Strong discontinuities in pixel intensity or colour",
+        "C": "Gaussian kernels",
+        "D": "Histogram peaks"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "The image gradient ∇I is a vector consisting of:",
+      "choices": {
+        "A": "Two second derivatives",
+        "B": "The Laplacian only",
+        "C": "The two first derivatives computed at each point",
+        "D": "Median responses"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "The magnitude of the gradient is computed as:",
+      "choices": {
+        "A": "Ix + Iy",
+        "B": "sqrt(Ix^2 + Iy^2)",
+        "C": "Ix - Iy",
+        "D": "Ix * Iy"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "Non-maximum suppression (NMS) is:",
+      "choices": {
+        "A": "A smoothing technique",
+        "B": "An edge thinning technique",
+        "C": "A histogram equalisation method",
+        "D": "A quantisation method"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "In hysteresis thresholding, if gradient magnitude is larger than Thigh, the pixel is:",
+      "choices": {
+        "A": "Rejected",
+        "B": "Accepted as an edge",
+        "C": "Smoothed",
+        "D": "Set to median"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "In hysteresis thresholding, if gradient magnitude is lower than Tlow, the pixel is:",
+      "choices": {
+        "A": "Accepted",
+        "B": "Rejected",
+        "C": "Smoothed",
+        "D": "Converted to float"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "In the Canny edge detector, the first step is:",
+      "choices": {
+        "A": "Hysteresis thresholding",
+        "B": "Gaussian filtering to suppress noise",
+        "C": "Non-maximum suppression",
+        "D": "Binary thresholding"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "High σ in the Canny detector will:",
+      "choices": {
+        "A": "Detect fine details",
+        "B": "Detect large scale structures",
+        "C": "Increase noise sensitivity",
+        "D": "Disable NMS"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "Low σ in the Canny detector will:",
+      "choices": {
+        "A": "Detect fine details",
+        "B": "Detect only large objects",
+        "C": "Remove edges",
+        "D": "Skip gradient computation"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "image-filtering-and-edge-detection",
+      "question": "The function recommended for convolution in Python in the slides is:",
+      "choices": {
+        "A": "filters.median",
+        "B": "scipy.ndimage.convolve",
+        "C": "skimage.feature.canny",
+        "D": "np.gradient"
+      },
+      "answer": "B"
+    },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   {
     "section": "image-filtering-and-edge-detection",
     "question": "Which statement about gradient magnitude is correct?",
@@ -2134,6 +1767,17 @@
     },
     "answer": "A"
   },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   {
     "section": "image-filtering-and-edge-detection",
     "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
@@ -2145,6 +1789,18 @@
     },
     "answer": "A"
   },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   {
     "section": "image-filtering-and-edge-detection",
     "question": "A kernel with coefficients that sum to 1 is useful because it:",
@@ -2167,864 +1823,7 @@
     },
     "answer": "C"
   },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "A kernel with coefficients that sum to 1 is useful because it:",
-    "choices": {
-      "A": "Preserves the average intensity (no overall brightness shift)",
-      "B": "Always sharpens the image",
-      "C": "Always produces a binary output",
-      "D": "Guarantees no noise"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which operation is NOT linear and cannot be represented as convolution?",
-    "choices": {
-      "A": "Gaussian smoothing",
-      "B": "Box filtering",
-      "C": "Median filtering",
-      "D": "Identity filtering"
-    },
-    "answer": "C"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "A kernel with coefficients that sum to 1 is useful because it:",
-    "choices": {
-      "A": "Preserves the average intensity (no overall brightness shift)",
-      "B": "Always sharpens the image",
-      "C": "Always produces a binary output",
-      "D": "Guarantees no noise"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which operation is NOT linear and cannot be represented as convolution?",
-    "choices": {
-      "A": "Gaussian smoothing",
-      "B": "Box filtering",
-      "C": "Median filtering",
-      "D": "Identity filtering"
-    },
-    "answer": "C"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "A kernel with coefficients that sum to 1 is useful because it:",
-    "choices": {
-      "A": "Preserves the average intensity (no overall brightness shift)",
-      "B": "Always sharpens the image",
-      "C": "Always produces a binary output",
-      "D": "Guarantees no noise"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which operation is NOT linear and cannot be represented as convolution?",
-    "choices": {
-      "A": "Gaussian smoothing",
-      "B": "Box filtering",
-      "C": "Median filtering",
-      "D": "Identity filtering"
-    },
-    "answer": "C"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "A kernel with coefficients that sum to 1 is useful because it:",
-    "choices": {
-      "A": "Preserves the average intensity (no overall brightness shift)",
-      "B": "Always sharpens the image",
-      "C": "Always produces a binary output",
-      "D": "Guarantees no noise"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which operation is NOT linear and cannot be represented as convolution?",
-    "choices": {
-      "A": "Gaussian smoothing",
-      "B": "Box filtering",
-      "C": "Median filtering",
-      "D": "Identity filtering"
-    },
-    "answer": "C"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "A kernel with coefficients that sum to 1 is useful because it:",
-    "choices": {
-      "A": "Preserves the average intensity (no overall brightness shift)",
-      "B": "Always sharpens the image",
-      "C": "Always produces a binary output",
-      "D": "Guarantees no noise"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which operation is NOT linear and cannot be represented as convolution?",
-    "choices": {
-      "A": "Gaussian smoothing",
-      "B": "Box filtering",
-      "C": "Median filtering",
-      "D": "Identity filtering"
-    },
-    "answer": "C"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "A kernel with coefficients that sum to 1 is useful because it:",
-    "choices": {
-      "A": "Preserves the average intensity (no overall brightness shift)",
-      "B": "Always sharpens the image",
-      "C": "Always produces a binary output",
-      "D": "Guarantees no noise"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which operation is NOT linear and cannot be represented as convolution?",
-    "choices": {
-      "A": "Gaussian smoothing",
-      "B": "Box filtering",
-      "C": "Median filtering",
-      "D": "Identity filtering"
-    },
-    "answer": "C"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "A kernel with coefficients that sum to 1 is useful because it:",
-    "choices": {
-      "A": "Preserves the average intensity (no overall brightness shift)",
-      "B": "Always sharpens the image",
-      "C": "Always produces a binary output",
-      "D": "Guarantees no noise"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which operation is NOT linear and cannot be represented as convolution?",
-    "choices": {
-      "A": "Gaussian smoothing",
-      "B": "Box filtering",
-      "C": "Median filtering",
-      "D": "Identity filtering"
-    },
-    "answer": "C"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "A kernel with coefficients that sum to 1 is useful because it:",
-    "choices": {
-      "A": "Preserves the average intensity (no overall brightness shift)",
-      "B": "Always sharpens the image",
-      "C": "Always produces a binary output",
-      "D": "Guarantees no noise"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which operation is NOT linear and cannot be represented as convolution?",
-    "choices": {
-      "A": "Gaussian smoothing",
-      "B": "Box filtering",
-      "C": "Median filtering",
-      "D": "Identity filtering"
-    },
-    "answer": "C"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "A kernel with coefficients that sum to 1 is useful because it:",
-    "choices": {
-      "A": "Preserves the average intensity (no overall brightness shift)",
-      "B": "Always sharpens the image",
-      "C": "Always produces a binary output",
-      "D": "Guarantees no noise"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which operation is NOT linear and cannot be represented as convolution?",
-    "choices": {
-      "A": "Gaussian smoothing",
-      "B": "Box filtering",
-      "C": "Median filtering",
-      "D": "Identity filtering"
-    },
-    "answer": "C"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "A kernel with coefficients that sum to 1 is useful because it:",
-    "choices": {
-      "A": "Preserves the average intensity (no overall brightness shift)",
-      "B": "Always sharpens the image",
-      "C": "Always produces a binary output",
-      "D": "Guarantees no noise"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which operation is NOT linear and cannot be represented as convolution?",
-    "choices": {
-      "A": "Gaussian smoothing",
-      "B": "Box filtering",
-      "C": "Median filtering",
-      "D": "Identity filtering"
-    },
-    "answer": "C"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "A kernel with coefficients that sum to 1 is useful because it:",
-    "choices": {
-      "A": "Preserves the average intensity (no overall brightness shift)",
-      "B": "Always sharpens the image",
-      "C": "Always produces a binary output",
-      "D": "Guarantees no noise"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which operation is NOT linear and cannot be represented as convolution?",
-    "choices": {
-      "A": "Gaussian smoothing",
-      "B": "Box filtering",
-      "C": "Median filtering",
-      "D": "Identity filtering"
-    },
-    "answer": "C"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "A kernel with coefficients that sum to 1 is useful because it:",
-    "choices": {
-      "A": "Preserves the average intensity (no overall brightness shift)",
-      "B": "Always sharpens the image",
-      "C": "Always produces a binary output",
-      "D": "Guarantees no noise"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which operation is NOT linear and cannot be represented as convolution?",
-    "choices": {
-      "A": "Gaussian smoothing",
-      "B": "Box filtering",
-      "C": "Median filtering",
-      "D": "Identity filtering"
-    },
-    "answer": "C"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "A kernel with coefficients that sum to 1 is useful because it:",
-    "choices": {
-      "A": "Preserves the average intensity (no overall brightness shift)",
-      "B": "Always sharpens the image",
-      "C": "Always produces a binary output",
-      "D": "Guarantees no noise"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which operation is NOT linear and cannot be represented as convolution?",
-    "choices": {
-      "A": "Gaussian smoothing",
-      "B": "Box filtering",
-      "C": "Median filtering",
-      "D": "Identity filtering"
-    },
-    "answer": "C"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "A kernel with coefficients that sum to 1 is useful because it:",
-    "choices": {
-      "A": "Preserves the average intensity (no overall brightness shift)",
-      "B": "Always sharpens the image",
-      "C": "Always produces a binary output",
-      "D": "Guarantees no noise"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which operation is NOT linear and cannot be represented as convolution?",
-    "choices": {
-      "A": "Gaussian smoothing",
-      "B": "Box filtering",
-      "C": "Median filtering",
-      "D": "Identity filtering"
-    },
-    "answer": "C"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "A kernel with coefficients that sum to 1 is useful because it:",
-    "choices": {
-      "A": "Preserves the average intensity (no overall brightness shift)",
-      "B": "Always sharpens the image",
-      "C": "Always produces a binary output",
-      "D": "Guarantees no noise"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which operation is NOT linear and cannot be represented as convolution?",
-    "choices": {
-      "A": "Gaussian smoothing",
-      "B": "Box filtering",
-      "C": "Median filtering",
-      "D": "Identity filtering"
-    },
-    "answer": "C"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "In Canny, why is 'single response' a desirable property?",
-    "choices": {
-      "A": "So each true edge ideally produces one thin response rather than multiple parallel responses",
-      "B": "So each edge is detected many times",
-      "C": "So the image becomes binary everywhere",
-      "D": "So gradients are not computed"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which statement about gradient magnitude is correct?",
-    "choices": {
-      "A": "It highlights locations of strong intensity change, often corresponding to edges",
-      "B": "It is always 0 in images",
-      "C": "It equals the histogram CDF",
-      "D": "It is invariant to σ in all cases"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-filtering-and-edge-detection",
-    "question": "Which filter is best matched to the goal 'reduce salt-and-pepper noise'?",
-    "choices": {
-      "A": "Median filter",
-      "B": "Sharpening filter",
-      "C": "Identity filter",
-      "D": "Edge detector"
-    },
-    "answer": "A"
-  },
+  
   {
     "section": "image-matching-interest-point-detection-and-feature-descriptors",
     "question": "In image matching/alignment/registration, the main goal is typically to:",
@@ -3377,15 +2176,48 @@
   
   {
     "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
+    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
     "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
+      "A": "Gradient magnitude",
+      "B": "Pixel intensity only",
+      "C": "PPI",
+      "D": "JPEG quality factor"
     },
-    "answer": "B"
+    "answer": "A"
   },
+  
+  
+  
+  
+  
+  
+  
+  {
+    "section": "image-matching-interest-point-detection-and-feature-descriptors",
+    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
+    "choices": {
+      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
+      "B": "Compression and demosaicing",
+      "C": "Bit depth and PPI",
+      "D": "HSV and CMYK"
+    },
+    "answer": "A"
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -3405,65 +2237,17 @@
   
   
   
-  
-  
-  
   {
     "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
+    "question": "In SIFT, the orientation histogram per subregion typically has:",
     "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
+      "A": "4 bins",
+      "B": "8 bins (45° each)",
+      "C": "16 bins (22.5° each)",
+      "D": "128 bins"
     },
-    "answer": "A"
+    "answer": "B"
   },
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   {
     "section": "image-matching-interest-point-detection-and-feature-descriptors",
@@ -3476,576 +2260,1736 @@
     },
     "answer": "A"
   },
+  
+  
+  
+  
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "The limitation of the basic Harris detector is that it is not invariant to:",
+      "section": "digital-images-and-image-processing",
+      "question": "What does the RGB colour model fundamentally represent?",
       "choices": {
-        "A": "Translation",
-        "B": "Rotation",
-        "C": "Scale changes",
-        "D": "Intensity shifts"
+        "A": "Amounts of red, green, and blue light emitted or combined",
+        "B": "Amounts of cyan, magenta, and yellow ink",
+        "C": "Temperature and brightness values",
+        "D": "Spatial resolution in three dimensions"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "digital-images-and-image-processing",
+      "question": "The RGB colour space is commonly represented geometrically as:",
+      "choices": {
+        "A": "A cylinder",
+        "B": "A triangle",
+        "C": "A cube",
+        "D": "A sphere"
       },
       "answer": "C"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "The scale-adapted Harris detector addresses invariance to:",
+      "section": "digital-images-and-image-processing",
+      "question": "In the RGB cube representation, what does the origin (0,0,0) correspond to?",
       "choices": {
-        "A": "Colour changes",
-        "B": "Scale changes",
-        "C": "Histogram stretching",
-        "D": "JPEG compression"
+        "A": "White",
+        "B": "Black",
+        "C": "Pure red",
+        "D": "Maximum brightness"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "Scale selection in scale-adapted detectors is achieved by:",
+      "section": "digital-images-and-image-processing",
+      "question": "In the RGB cube, the point (255,255,255) represents:",
       "choices": {
-        "A": "Using a fixed window size",
-        "B": "Analysing the response across multiple scales",
-        "C": "Applying histogram equalisation",
-        "D": "Using only Sobel filters"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "The Laplacian-based detector relies on:",
-      "choices": {
-        "A": "First derivatives only",
-        "B": "Second derivatives (Laplacian operator)",
-        "C": "Median filtering",
-        "D": "Histogram matching"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "The Laplacian operator is defined as:",
-      "choices": {
-        "A": "Ix + Iy",
-        "B": "Ix^2 + Iy^2",
-        "C": "Ixx + Iyy",
-        "D": "det(M)"
+        "A": "Black",
+        "B": "Pure blue",
+        "C": "White",
+        "D": "Yellow"
       },
       "answer": "C"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "The Scale-Invariant Feature Transform (SIFT) detector is designed to be invariant to:",
+      "section": "digital-images-and-image-processing",
+      "question": "Why is RGB considered an additive colour model?",
       "choices": {
-        "A": "Colour space only",
-        "B": "Scale and rotation",
-        "C": "Bit depth",
-        "D": "JPEG compression only"
+        "A": "Because ink absorbs light",
+        "B": "Because colours are formed by adding light intensities together",
+        "C": "Because it subtracts from white",
+        "D": "Because it reduces dynamic range"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "SIFT detects keypoints by searching for extrema in:",
+      "section": "digital-images-and-image-processing",
+      "question": "What does the CMYK colour model represent?",
       "choices": {
-        "A": "Histogram bins",
-        "B": "Difference-of-Gaussians (DoG) scale space",
-        "C": "Median filter outputs",
-        "D": "Raw pixel values only"
+        "A": "Emission of coloured light",
+        "B": "Subtractive mixing of inks in printing",
+        "C": "Hue, saturation, and value",
+        "D": "Opponent perceptual axes"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "Difference-of-Gaussians (DoG) is used in SIFT as an approximation of:",
+      "section": "digital-images-and-image-processing",
+      "question": "Why is black (K) included in CMYK printing?",
       "choices": {
-        "A": "The gradient magnitude",
-        "B": "The Laplacian of Gaussian",
-        "C": "The median filter",
-        "D": "The homography"
+        "A": "To reduce file size",
+        "B": "To achieve deeper blacks and improve print quality",
+        "C": "To increase brightness",
+        "D": "To simplify RGB conversion"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "SIFT assigns an orientation to each keypoint in order to achieve:",
+      "section": "digital-images-and-image-processing",
+      "question": "HSV colour space is often represented geometrically as:",
       "choices": {
-        "A": "Colour invariance",
-        "B": "Rotation invariance",
-        "C": "Scale invariance only",
-        "D": "Histogram invariance"
+        "A": "A cube",
+        "B": "A cylinder",
+        "C": "A flat plane",
+        "D": "A pyramid"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "A SIFT descriptor represents:",
+      "section": "digital-images-and-image-processing",
+      "question": "In HSV colour space, what does Hue represent?",
       "choices": {
-        "A": "A global histogram of the entire image",
-        "B": "Local gradient orientation histograms around a keypoint",
-        "C": "Raw pixel intensities only",
-        "D": "Colour channel averages"
+        "A": "Brightness level",
+        "B": "Dominant wavelength (discernible colour)",
+        "C": "Number of pixels",
+        "D": "Ink absorption rate"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "The dimensionality of a standard SIFT descriptor is:",
+      "section": "digital-images-and-image-processing",
+      "question": "In HSV colour space, what does Saturation represent?",
       "choices": {
-        "A": "32",
-        "B": "64",
-        "C": "128",
-        "D": "256"
+        "A": "Intensity precision",
+        "B": "Vividness or purity of the colour",
+        "C": "Spatial resolution",
+        "D": "Number of channels"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "digital-images-and-image-processing",
+      "question": "In HSV colour space, what does Value represent?",
+      "choices": {
+        "A": "Brightness of the colour",
+        "B": "Number of bits per pixel",
+        "C": "Dynamic range only",
+        "D": "Distance in LAB space"
+      },
+      "answer": "A"
+    },
+    {
+      "section": "digital-images-and-image-processing",
+      "question": "Which colour model attempts perceptual uniformity?",
+      "choices": {
+        "A": "RGB",
+        "B": "CMYK",
+        "C": "HSV",
+        "D": "CIE LAB"
+      },
+      "answer": "D"
+    },
+    {
+      "section": "digital-images-and-image-processing",
+      "question": "In LAB colour space, the 'a' axis represents:",
+      "choices": {
+        "A": "Brightness only",
+        "B": "Blue versus yellow",
+        "C": "Red versus green",
+        "D": "Hue angle"
       },
       "answer": "C"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "Speeded-Up Robust Features (SURF) were introduced to:",
+      "section": "digital-images-and-image-processing",
+      "question": "In LAB colour space, the 'b' axis represents:",
       "choices": {
-        "A": "Increase descriptor dimensionality",
-        "B": "Provide a faster alternative to SIFT",
-        "C": "Remove scale invariance",
-        "D": "Replace Harris detector only"
+        "A": "Red versus green",
+        "B": "Blue versus yellow",
+        "C": "Brightness only",
+        "D": "Spatial depth"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "SURF approximates the Hessian matrix using:",
+      "section": "digital-images-and-image-processing",
+      "question": "Why is LAB considered perceptually uniform?",
       "choices": {
-        "A": "Sobel filters",
-        "B": "Box filters and integral images",
-        "C": "Median filters",
-        "D": "Histogram equalisation"
+        "A": "Because it uses 24 bits",
+        "B": "Because equal distances in LAB space approximate equal perceived colour differences",
+        "C": "Because it is cylindrical",
+        "D": "Because it uses additive mixing"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "A feature descriptor is used to:",
+      "section": "digital-images-and-image-processing",
+      "question": "How is light captured in digital cameras separated into RGB values?",
       "choices": {
-        "A": "Estimate image resolution",
-        "B": "Describe the local neighbourhood of a keypoint for matching",
-        "C": "Perform thresholding",
-        "D": "Compute eigenvalues"
+        "A": "Through histogram equalisation",
+        "B": "Using a colour filter array (CFA)",
+        "C": "Using JPEG compression",
+        "D": "Using gamma correction"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "Feature matching consists of:",
+      "section": "digital-images-and-image-processing",
+      "question": "What is a colour filter array (CFA)?",
       "choices": {
-        "A": "Comparing descriptor vectors between images",
-        "B": "Matching raw pixel grids directly",
-        "C": "Matching histograms only",
-        "D": "Matching colour spaces"
-      },
-      "answer": "A"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "After finding correspondences between keypoints, the next step is to:",
-      "choices": {
-        "A": "Apply histogram equalisation",
-        "B": "Estimate the transformation that best aligns the images",
-        "C": "Apply Gaussian blur",
-        "D": "Convert to grayscale"
+        "A": "A compression algorithm",
+        "B": "A grid of coloured filters placed over the sensor",
+        "C": "A histogram transformation",
+        "D": "A type of colour space"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "The transformation estimated from matched keypoints may be:",
+      "section": "digital-images-and-image-processing",
+      "question": "What is the Bayer pattern?",
       "choices": {
-        "A": "Rigid, affine, or projective",
-        "B": "Only translation",
-        "C": "Only colour-based",
-        "D": "Only histogram-based"
-      },
-      "answer": "A"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "Interest point detection and feature description are separated because:",
-      "choices": {
-        "A": "Detection finds locations, description encodes local appearance",
-        "B": "Detection performs matching",
-        "C": "Description finds corners",
-        "D": "They are mathematically identical"
-      },
-      "answer": "A"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "Repeatability of a detector refers to:",
-      "choices": {
-        "A": "Number of pixels detected",
-        "B": "Ability to detect the same keypoints under different conditions",
-        "C": "Descriptor dimensionality",
-        "D": "Kernel size"
-      },
-      "answer": "B"
-    },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "What is the goal of image matching / registration?",
-      "choices": {
-        "A": "To smooth an image using a Gaussian filter",
-        "B": "To estimate the transformation that aligns two images",
-        "C": "To convert an image from RGB to HSV",
-        "D": "To compute the histogram of an image"
+        "A": "A lossy compression method",
+        "B": "The most common CFA design based on a GRBG arrangement",
+        "C": "A colour cube representation",
+        "D": "A histogram equalisation technique"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "In pixel-based matching, what is typically optimised?",
+      "section": "digital-images-and-image-processing",
+      "question": "Why does the Bayer pattern contain twice as many green filters as red or blue?",
       "choices": {
-        "A": "A similarity metric computed from image pixels",
-        "B": "The number of detected corners",
-        "C": "The kernel size used for filtering",
-        "D": "The bit depth of the image"
-      },
-      "answer": "A"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "Which expression captures the objective of pixel-based registration?",
-      "choices": {
-        "A": "T* = argmax_T Similarity(I1, T(I2))",
-        "B": "R = det(M) - k(trace(M))^2",
-        "C": "||∇I|| = sqrt(Ix^2 + Iy^2)",
-        "D": "J = K * I"
-      },
-      "answer": "A"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "Which are examples of similarity metrics used in pixel-based matching?",
-      "choices": {
-        "A": "Sobel and Laplacian",
-        "B": "Sum of Squared Differences (SSD) and Mutual Information (MI)",
-        "C": "Median and Gaussian",
-        "D": "Non-maximum suppression and hysteresis"
+        "A": "Green sensors are cheaper",
+        "B": "The human eye is more sensitive to green wavelengths",
+        "C": "Green increases resolution",
+        "D": "It reduces file size"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "Matching by edges aligns images using:",
+      "section": "digital-images-and-image-processing",
+      "question": "What does the demosaicing algorithm do?",
       "choices": {
-        "A": "Only colour histograms",
-        "B": "Edge maps extracted from images",
-        "C": "Raw pixel intensities only",
-        "D": "Only bit depth information"
+        "A": "Reduces spatial resolution",
+        "B": "Interpolates missing colour values so each pixel has R, G, and B values",
+        "C": "Compresses the image",
+        "D": "Converts RGB to LAB"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "Matching by interest points is efficient mainly because:",
+      "section": "digital-images-and-image-processing",
+      "question": "What does the demosaicing algorithm ensure?",
       "choices": {
-        "A": "It uses all pixels in the image",
-        "B": "It relies on a small set of detected keypoints",
-        "C": "It avoids computing descriptors",
-        "D": "It removes the need for any transformation"
+        "A": "Bit depth increases",
+        "B": "Final pixel resolution is preserved",
+        "C": "Dynamic range increases",
+        "D": "Colour channels are reduced"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "An interest point is best defined as a point that:",
+      "section": "digital-images-and-image-processing",
+      "question": "A RAW image file primarily contains:",
       "choices": {
-        "A": "Always lies on the image border",
-        "B": "Has a well-defined position and rich local structure",
-        "C": "Is the brightest pixel in the image",
-        "D": "Has constant intensity in its neighbourhood"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "Repeatability of an interest point detector refers to the ability to:",
-      "choices": {
-        "A": "Detect the same keypoints under different conditions",
-        "B": "Return the same histogram for every image",
-        "C": "Avoid computing image derivatives",
-        "D": "Make descriptors binary"
-      },
-      "answer": "A"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "A corner is defined as:",
-      "choices": {
-        "A": "A flat region of constant intensity",
-        "B": "An intersection of two edges",
-        "C": "A single isolated pixel",
-        "D": "A region with one dominant gradient direction"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "In a flat region, intensity change occurs:",
-      "choices": {
-        "A": "In no direction",
-        "B": "Only along one direction",
-        "C": "Strongly in two directions",
-        "D": "Only along the diagonal direction"
-      },
-      "answer": "A"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "In an edge region, intensity change occurs:",
-      "choices": {
-        "A": "In no direction",
-        "B": "Along one direction only",
-        "C": "Along two directions equally",
-        "D": "Only at corners"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "In a corner region, intensity change occurs:",
-      "choices": {
-        "A": "In no direction",
-        "B": "Along one direction only",
-        "C": "Along two directions",
-        "D": "Only along the x-axis"
+        "A": "Fully demosaiced RGB pixels",
+        "B": "Interpolated colour data only",
+        "C": "Sensor data before demosaicing",
+        "D": "Compressed JPEG pixels"
       },
       "answer": "C"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "The matrix M used by the Harris detector is called:",
+      "section": "digital-images-and-image-processing",
+      "question": "What does an RGBD image contain in addition to RGB values?",
       "choices": {
-        "A": "Homography matrix",
-        "B": "Structure tensor",
-        "C": "Histogram matrix",
-        "D": "Colour transform matrix"
+        "A": "Temperature data",
+        "B": "Depth information for each pixel",
+        "C": "Two additional colour channels",
+        "D": "Compression metadata"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "The structure tensor M is computed from local:",
+      "section": "digital-images-and-image-processing",
+      "question": "In an RGBD image defined as I(x,y): Z² → Z⁴, what does the fourth value represent?",
       "choices": {
-        "A": "Second derivatives Ixx and Iyy only",
-        "B": "First derivatives Ix and Iy",
-        "C": "Histogram bins",
-        "D": "RGB values only"
-      },
-      "answer": "B"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "Eigenvalues λ1 and λ2 of the structure tensor are used to classify:",
-      "choices": {
-        "A": "Flat regions, edges, and corners",
-        "B": "Compression formats",
-        "C": "Colour models",
-        "D": "Bit depth"
-      },
-      "answer": "A"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "If λ1 ≈ 0 and λ2 ≈ 0, the region is:",
-      "choices": {
-        "A": "Corner",
-        "B": "Edge",
-        "C": "Flat",
-        "D": "Keypoint descriptor"
+        "A": "Hue",
+        "B": "Time",
+        "C": "Depth from the camera",
+        "D": "Gamma correction"
       },
       "answer": "C"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "If λ1 ≫ λ2, the region is:",
+      "section": "digital-images-and-image-processing",
+      "question": "What does the depth channel (D) in an RGBD image measure?",
       "choices": {
-        "A": "Flat",
-        "B": "Edge",
-        "C": "Corner",
-        "D": "Blob"
+        "A": "Brightness of the pixel",
+        "B": "Distance between the object and the camera",
+        "C": "Colour saturation",
+        "D": "Pixel density"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "If λ1 ≈ λ2 and both are large, the region is:",
+      "section": "digital-images-and-image-processing",
+      "question": "Which device is typically required to capture RGBD data?",
       "choices": {
-        "A": "Flat",
-        "B": "Edge",
-        "C": "Corner",
-        "D": "Uniform background"
+        "A": "Standard webcam only",
+        "B": "Camera with an additional depth sensor",
+        "C": "Laser printer",
+        "D": "JPEG encoder"
+      },
+      "answer": "B"
+    },
+    {
+      "section": "digital-images-and-image-processing",
+      "question": "What are volumetric images?",
+      "choices": {
+        "A": "Images stored as JPEG files",
+        "B": "2D grayscale images",
+        "C": "3D image data stored as voxels",
+        "D": "Colour-only images"
       },
       "answer": "C"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "What is the Harris cornerness measure?",
+      "section": "digital-images-and-image-processing",
+      "question": "In a volumetric image defined as I(x,y,z): Z³ → Z, what does (x,y,z) represent?",
       "choices": {
-        "A": "R = λ1 + λ2",
-        "B": "R = λ1λ2 - k(λ1 + λ2)^2",
-        "C": "R = min(λ1, λ2)",
-        "D": "R = sqrt(Ix^2 + Iy^2)"
+        "A": "Three colour channels",
+        "B": "Spatial coordinates in 3D space",
+        "C": "Time and colour",
+        "D": "Resolution and depth"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "The Harris response can be written as:",
+      "section": "digital-images-and-image-processing",
+      "question": "The smallest unit in a volumetric image is called:",
       "choices": {
-        "A": "R = det(M) - k(trace(M))^2",
-        "B": "R = det(M) + k(trace(M))^2",
-        "C": "R = trace(M) - k det(M)",
-        "D": "R = det(M) / trace(M)"
+        "A": "Pixel",
+        "B": "Byte",
+        "C": "Voxel",
+        "D": "Bit"
       },
-      "answer": "A"
+      "answer": "C"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "The Kanade–Tomasi cornerness measure is defined as:",
+      "section": "digital-images-and-image-processing",
+      "question": "A CT scan is an example of:",
       "choices": {
-        "A": "R = λ1λ2 - k(λ1 + λ2)^2",
-        "B": "R = min(λ1, λ2)",
-        "C": "R = λ1 + λ2",
-        "D": "R = det(M) - trace(M)"
+        "A": "RGB image",
+        "B": "Colour video",
+        "C": "Volumetric image",
+        "D": "Binary image"
+      },
+      "answer": "C"
+    },
+    {
+      "section": "digital-images-and-image-processing",
+      "question": "How is a colour video mathematically represented?",
+      "choices": {
+        "A": "I(x,y): Z² → Z",
+        "B": "I(x,y,t): Z³ → Z³",
+        "C": "I(x,y,z): Z³ → Z",
+        "D": "I(x): Z → Z"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "The Noble cornerness measure is defined as:",
+      "section": "digital-images-and-image-processing",
+      "question": "In a colour video I(x,y,t), what does 't' represent?",
       "choices": {
-        "A": "R = λ1 - λ2",
-        "B": "R = λ1λ2 / (λ1 + λ2 + ε)",
-        "C": "R = λ1 + λ2",
-        "D": "R = det(M) - k(trace(M))^2"
+        "A": "Temperature",
+        "B": "Time",
+        "C": "Texture",
+        "D": "Threshold"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "Which step is performed first in the Harris detector pipeline?",
+      "section": "digital-images-and-image-processing",
+      "question": "Why is a colour video considered a 3D signal?",
       "choices": {
-        "A": "Thresholding on R",
-        "B": "Compute image derivatives Ix and Iy",
-        "C": "Match descriptors across images",
-        "D": "Estimate a homography"
+        "A": "Because it contains RGB channels",
+        "B": "Because it includes spatial dimensions plus time",
+        "C": "Because it has depth information",
+        "D": "Because it is volumetric"
       },
       "answer": "B"
     },
     {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "After computing the Harris response R, which step is used to localise corners?",
+      "section": "digital-images-and-image-processing",
+      "question": "Which of the following distinguishes a volumetric image from a colour video?",
       "choices": {
-        "A": "Gaussian smoothing only",
-        "B": "Thresholding and non-maximum suppression",
-        "C": "Histogram equalisation",
-        "D": "Median filtering"
+        "A": "Volumetric images include time",
+        "B": "Colour videos include spatial depth (z)",
+        "C": "Volumetric images use spatial depth (z) while videos use time (t)",
+        "D": "They are identical"
       },
-      "answer": "B"
+      "answer": "C"
     },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "A key limitation of the basic Harris detector is that it is not invariant to:",
-      "choices": {
-        "A": "Translation",
-        "B": "Scale changes",
-        "C": "Rotation",
-        "D": "Brightness offsets"
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "What type of object is returned by skimage.io.imread?",
+        "choices": {
+          "A": "A Python list",
+          "B": "A NumPy ndarray",
+          "C": "A PIL Image object",
+          "D": "A dictionary"
+        },
+        "answer": "B"
       },
-      "answer": "B"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "The Scale-Invariant Feature Transform (SIFT) is designed to be invariant to:",
-      "choices": {
-        "A": "Scale and rotation",
-        "B": "Bit depth and compression",
-        "C": "Image format and PPI",
-        "D": "Only translation"
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "If img.shape returns (777, 1024, 3), what does 3 represent?",
+        "choices": {
+          "A": "Number of rows",
+          "B": "Number of columns",
+          "C": "Number of colour channels",
+          "D": "Bit depth"
+        },
+        "answer": "C"
       },
-      "answer": "A"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "In SIFT, keypoints are detected as extrema in:",
-      "choices": {
-        "A": "Difference-of-Gaussians (DoG) scale space",
-        "B": "Histogram equalised images",
-        "C": "Median-filtered images",
-        "D": "RGB colour cube"
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "If img.dtype is uint8, what is the possible intensity range for each channel?",
+        "choices": {
+          "A": "[0, 1]",
+          "B": "[-1, 1]",
+          "C": "[0, 255]",
+          "D": "[0, 1024]"
+        },
+        "answer": "C"
       },
-      "answer": "A"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "The SIFT descriptor is primarily based on:",
-      "choices": {
-        "A": "Histograms of pixel intensities",
-        "B": "Histograms of gradient orientations",
-        "C": "Binary edge maps only",
-        "D": "Raw RGB values only"
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "What happens if you add 100 to a uint8 image channel without converting to float?",
+        "choices": {
+          "A": "Values automatically rescale to [0,1]",
+          "B": "Values larger than 255 wrap around using modulo arithmetic",
+          "C": "Python raises an error",
+          "D": "Values are clipped to 255"
+        },
+        "answer": "B"
       },
-      "answer": "B"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "Speeded-Up Robust Features (SURF) were introduced mainly to:",
-      "choices": {
-        "A": "Replace edge detection",
-        "B": "Provide a faster alternative to SIFT",
-        "C": "Remove scale invariance",
-        "D": "Avoid using descriptors"
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "Why is it recommended to convert images to float before filtering operations?",
+        "choices": {
+          "A": "Float images require less memory",
+          "B": "Some operations are accurate only using floating point types",
+          "C": "Matplotlib cannot display uint8 images",
+          "D": "Float images avoid interpolation"
+        },
+        "answer": "B"
       },
-      "answer": "B"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "A feature descriptor is best defined as:",
-      "choices": {
-        "A": "A representation of the local neighbourhood around a keypoint",
-        "B": "A global histogram of the entire image",
-        "C": "A transformation matrix for registration",
-        "D": "A filtering kernel"
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "Which function should be used to convert an image to float safely in skimage?",
+        "choices": {
+          "A": "astype(float)",
+          "B": "np.float()",
+          "C": "img_as_float",
+          "D": "float(img)"
+        },
+        "answer": "C"
       },
-      "answer": "A"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "Feature matching typically consists of:",
-      "choices": {
-        "A": "Comparing descriptor vectors between images",
-        "B": "Comparing only image histograms",
-        "C": "Comparing only edge maps",
-        "D": "Comparing only pixel resolutions"
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "Why should numpy's astype() not be used for image type conversion?",
+        "choices": {
+          "A": "It changes spatial resolution",
+          "B": "It does not properly rescale intensity ranges",
+          "C": "It converts RGB to grayscale",
+          "D": "It removes channels"
+        },
+        "answer": "B"
       },
-      "answer": "A"
-    },
-    {
-      "section": "image-matching-interest-point-detection-and-feature-descriptors",
-      "question": "After finding correspondences between keypoints, the next step is to:",
-      "choices": {
-        "A": "Estimate the transformation that aligns the images",
-        "B": "Convert images to HSV",
-        "C": "Apply a median filter",
-        "D": "Compute a histogram"
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "When plotting a grayscale image with plt.imshow, what should be specified?",
+        "choices": {
+          "A": "cmap='gray'",
+          "B": "dtype='gray'",
+          "C": "mode='L'",
+          "D": "channels=1"
+        },
+        "answer": "A"
       },
-      "answer": "A"
-    }
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "What does rgb2gray do?",
+        "choices": {
+          "A": "Reduces channels from 3 to 1 and converts to float",
+          "B": "Removes brightness information",
+          "C": "Converts to uint8",
+          "D": "Adds a fourth channel"
+        },
+        "answer": "A"
+      },
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "After rgb2gray, what is the typical data type?",
+        "choices": {
+          "A": "uint8",
+          "B": "int16",
+          "C": "float64",
+          "D": "bool"
+        },
+        "answer": "C"
+      },
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "When computing a histogram with plt.hist, why must the image be flattened?",
+        "choices": {
+          "A": "To reduce memory usage",
+          "B": "To convert to grayscale",
+          "C": "Because hist expects a 1D array",
+          "D": "To avoid clipping"
+        },
+        "answer": "C"
+      },
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "What does setting density=True in plt.hist produce?",
+        "choices": {
+          "A": "Raw pixel counts",
+          "B": "Probability density function (PDF)",
+          "C": "Cumulative distribution",
+          "D": "Gamma correction"
+        },
+        "answer": "B"
+      },
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "Which function performs contrast stretching in skimage?",
+        "choices": {
+          "A": "exposure.adjust_gamma",
+          "B": "exposure.rescale_intensity",
+          "C": "exposure.equalize_hist",
+          "D": "transform.resize"
+        },
+        "answer": "B"
+      },
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "Which function applies gamma correction?",
+        "choices": {
+          "A": "exposure.adjust_gamma",
+          "B": "exposure.rescale_intensity",
+          "C": "transform.warp",
+          "D": "rgb2hsv"
+        },
+        "answer": "A"
+      },
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "When applying an AffineTransform using transform.warp, why must tform.inverse be used?",
+        "choices": {
+          "A": "Because forward mapping creates colour distortions",
+          "B": "Because inverse mapping avoids holes in the output image",
+          "C": "Because warp only accepts inverse matrices",
+          "D": "Because affine matrices are symmetric"
+        },
+        "answer": "B"
+      },
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "How many point correspondences are required to estimate an affine transformation?",
+        "choices": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "6"
+        },
+        "answer": "B"
+      },
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "How many correspondences are required for a projective transformation?",
+        "choices": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "6"
+        },
+        "answer": "C"
+      },
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "What does tform.params provide?",
+        "choices": {
+          "A": "The transformed image",
+          "B": "The affine transformation matrix",
+          "C": "The histogram values",
+          "D": "The interpolation method"
+        },
+        "answer": "B"
+      },
+      {
+        "section": "digital-images-and-image-processing",
+        "question": "Which function estimates transformation parameters from point correspondences?",
+        "choices": {
+          "A": "transform.rotate",
+          "B": "tform.estimate",
+          "C": "np.linalg.solve",
+          "D": "exposure.equalize_hist"
+        },
+        "answer": "B"
+      },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "What does it mean that a brightness transformation is position-independent?",
+          "choices": {
+            "A": "The transformation depends on spatial coordinates (x,y)",
+            "B": "The transformation depends only on pixel intensity, not on its position",
+            "C": "The transformation changes spatial resolution",
+            "D": "The transformation modifies geometry"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "In the brightness transformation J = f(I), what does f represent?",
+          "choices": {
+            "A": "A spatial mapping of coordinates",
+            "B": "A function mapping input intensities to output intensities",
+            "C": "A histogram bin index",
+            "D": "A colour channel selector"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "Why are (x,y) often dropped in brightness transformation equations?",
+          "choices": {
+            "A": "Because the image is grayscale",
+            "B": "Because the transformation does not depend on spatial position",
+            "C": "Because coordinates are unknown",
+            "D": "Because warp handles geometry"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "Which of the following is an example of a position-independent transformation?",
+          "choices": {
+            "A": "Rotation",
+            "B": "Translation",
+            "C": "J = 255 − I",
+            "D": "Shear"
+          },
+          "answer": "C"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "What does the negative transformation J = 255 − I represent?",
+          "choices": {
+            "A": "A geometric reflection",
+            "B": "An inversion of intensity values",
+            "C": "A histogram equalisation",
+            "D": "A spatial shift"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "Geometric transformations primarily modify:",
+          "choices": {
+            "A": "Pixel intensities only",
+            "B": "Colour space",
+            "C": "Spatial positions of pixels",
+            "D": "Bit depth"
+          },
+          "answer": "C"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "Mathematically, a geometric transformation is written as:",
+          "choices": {
+            "A": "J = f(I)",
+            "B": "x' = T x",
+            "C": "I = T J",
+            "D": "J = αI + β"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "In x' = T x, what does T represent?",
+          "choices": {
+            "A": "A colour transformation",
+            "B": "A mapping function between coordinates",
+            "C": "A histogram bin",
+            "D": "A pixel intensity"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "Why is inverse mapping (T⁻¹) used when warping images?",
+          "choices": {
+            "A": "To increase dynamic range",
+            "B": "To prevent gaps in the output image",
+            "C": "To reduce interpolation",
+            "D": "To simplify matrix multiplication"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "What is typically required when using inverse mapping?",
+          "choices": {
+            "A": "Colour balancing",
+            "B": "Interpolation of pixel values",
+            "C": "Histogram flattening",
+            "D": "Bit-depth conversion"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "An affine transformation preserves which properties?",
+          "choices": {
+            "A": "Angles and lengths only",
+            "B": "Collinearity and parallelism",
+            "C": "Colour uniformity",
+            "D": "Histogram shape"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "How many degrees of freedom does an affine transformation have?",
+          "choices": {
+            "A": "3",
+            "B": "4",
+            "C": "6",
+            "D": "8"
+          },
+          "answer": "C"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "How many point correspondences are required to compute an affine transformation?",
+          "choices": {
+            "A": "2",
+            "B": "3",
+            "C": "4",
+            "D": "6"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "Which transformation requires at least 4 correspondences?",
+          "choices": {
+            "A": "Rigid",
+            "B": "Affine",
+            "C": "Projective",
+            "D": "Translation"
+          },
+          "answer": "C"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "Why does a projective transformation require more correspondences than affine?",
+          "choices": {
+            "A": "It has fewer parameters",
+            "B": "It has 8 degrees of freedom",
+            "C": "It preserves angles",
+            "D": "It is linear"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "Which of the following cannot be represented as a matrix multiplication?",
+          "choices": {
+            "A": "Affine transformation",
+            "B": "Rigid transformation",
+            "C": "Projective transformation",
+            "D": "Non-linear transformation"
+          },
+          "answer": "D"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "Radial lens distortion is an example of:",
+          "choices": {
+            "A": "Affine transformation",
+            "B": "Rigid transformation",
+            "C": "Non-linear transformation",
+            "D": "Translation"
+          },
+          "answer": "C"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "What does translation do to an image?",
+          "choices": {
+            "A": "Changes pixel intensities",
+            "B": "Shifts all pixel positions by a fixed offset",
+            "C": "Scales intensity values",
+            "D": "Applies gamma correction"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "What does scaling affect in a geometric transformation?",
+          "choices": {
+            "A": "Brightness only",
+            "B": "Spatial distances between pixels",
+            "C": "Colour saturation",
+            "D": "Histogram bins"
+          },
+          "answer": "B"
+        },
+        {
+          "section": "digital-images-and-image-processing",
+          "question": "Which transformation preserves angles and lengths?",
+          "choices": {
+            "A": "Projective",
+            "B": "Affine",
+            "C": "Rigid",
+            "D": "Shear"
+          },
+          "answer": "C"
+        },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "What is the main purpose of image filtering?",
+            "choices": {
+              "A": "To increase pixel resolution",
+              "B": "To remove unwanted components or enhance desired ones",
+              "C": "To change colour space",
+              "D": "To convert analogue signals into digital"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "In window-based image filtering, how is the output pixel J(x,y) computed?",
+            "choices": {
+              "A": "Using the entire image",
+              "B": "Using a neighbourhood defined by a window centred at (x,y)",
+              "C": "Using histogram equalisation",
+              "D": "Using only the central pixel"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "When is filtering considered linear?",
+            "choices": {
+              "A": "When the output is the median of the window",
+              "B": "When the output is a linear combination of neighbourhood pixel values with fixed weights",
+              "C": "When the kernel changes at each position",
+              "D": "When using HSV colour space"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "The weights used in linear filtering are typically represented as:",
+            "choices": {
+              "A": "A histogram",
+              "B": "A kernel",
+              "C": "A gradient map",
+              "D": "A CDF"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "What is the act of moving a linear kernel over an image called?",
+            "choices": {
+              "A": "Histogram equalisation",
+              "B": "Convolution",
+              "C": "Quantisation",
+              "D": "Gamma correction"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "Which of the following is NOT a property of convolution?",
+            "choices": {
+              "A": "Commutative",
+              "B": "Distributive",
+              "C": "Associative",
+              "D": "Non-linear"
+            },
+            "answer": "D"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "What does zero padding do during edge handling?",
+            "choices": {
+              "A": "Replicates nearest border pixels",
+              "B": "Extends the image using zeros",
+              "C": "Wraps pixels from the opposite side",
+              "D": "Removes border pixels"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "What is the purpose of kernel normalisation?",
+            "choices": {
+              "A": "To increase contrast",
+              "B": "To ensure the sum of kernel elements equals 1",
+              "C": "To reduce kernel size",
+              "D": "To sharpen edges"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "Why is it recommended to convert images to float before filtering?",
+            "choices": {
+              "A": "To increase spatial resolution",
+              "B": "To avoid clipping and loss of precision",
+              "C": "To change colour space",
+              "D": "To reduce noise automatically"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "What is the output of a moving average (box) filter?",
+            "choices": {
+              "A": "Maximum value in window",
+              "B": "Median value in window",
+              "C": "Average of values in window",
+              "D": "Central pixel only"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "Increasing the size of a box filter primarily results in:",
+            "choices": {
+              "A": "Stronger smoothing and loss of detail",
+              "B": "Sharper edges",
+              "C": "Higher dynamic range",
+              "D": "Reduced convolution cost"
+            },
+            "answer": "A"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "In a Gaussian filter, what controls the amount of blurring?",
+            "choices": {
+              "A": "Kernel size only",
+              "B": "Standard deviation σ",
+              "C": "Histogram bins",
+              "D": "Image resolution"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "Compared to a box filter, a Gaussian filter:",
+            "choices": {
+              "A": "Assigns equal weights to all pixels",
+              "B": "Gives larger weight to the central pixel",
+              "C": "Is non-linear",
+              "D": "Uses median instead of mean"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "What does a sharpening filter enhance?",
+            "choices": {
+              "A": "Low-frequency components",
+              "B": "Image details (differences from local average)",
+              "C": "Colour saturation",
+              "D": "Histogram bins"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "Which filter is non-linear?",
+            "choices": {
+              "A": "Gaussian filter",
+              "B": "Moving average filter",
+              "C": "Median filter",
+              "D": "Identity filter"
+            },
+            "answer": "C"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "The median filter is particularly effective against:",
+            "choices": {
+              "A": "Motion blur",
+              "B": "Salt & pepper noise",
+              "C": "Lens distortion",
+              "D": "Low contrast"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "Edge detection primarily identifies:",
+            "choices": {
+              "A": "Uniform regions",
+              "B": "Locations of significant intensity change",
+              "C": "Histogram peaks",
+              "D": "Colour transitions only"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "Gradient-based edge detection is based on:",
+            "choices": {
+              "A": "Second derivatives",
+              "B": "First derivatives",
+              "C": "Median filtering",
+              "D": "Histogram equalisation"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "Laplacian-based edge detection uses:",
+            "choices": {
+              "A": "First derivative",
+              "B": "Second derivative",
+              "C": "Median value",
+              "D": "Colour channels"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "In the Canny edge detector, what does non-maximum suppression (NMS) do?",
+            "choices": {
+              "A": "Applies Gaussian smoothing",
+              "B": "Suppresses all gradient values except local maxima along the gradient direction",
+              "C": "Enhances histogram contrast",
+              "D": "Normalises kernel weights"
+            },
+            "answer": "B"
+          },
+          {
+            "section": "image-filtering-and-edge-detection",
+            "question": "Why is Gaussian smoothing typically applied before gradient-based edge detection?",
+            "choices": {
+              "A": "To increase contrast",
+              "B": "To reduce noise and avoid detecting false edges",
+              "C": "To convert to HSV",
+              "D": "To normalise intensity"
+            },
+            "answer": "B"
+          },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "What is image matching / alignment / registration?",
+              "choices": {
+                "A": "Changing the colour space of an image",
+                "B": "Identifying the transformation that aligns two or more images",
+                "C": "Smoothing an image using Gaussian filtering",
+                "D": "Detecting edges using gradients"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "In image registration, the goal is to estimate which type of transformation?",
+              "choices": {
+                "A": "Only rigid transformations",
+                "B": "Rigid, affine, or non-rigid transformations",
+                "C": "Only histogram-based transformations",
+                "D": "Only colour transformations"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "Matching by pixels estimates a transformation by optimising:",
+              "choices": {
+                "A": "A similarity metric based on image pixels",
+                "B": "The histogram equalisation function",
+                "C": "The gradient magnitude",
+                "D": "The number of corners"
+              },
+              "answer": "A"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "The optimisation problem for pixel-based matching is written as:",
+              "choices": {
+                "A": "T* = argmin I",
+                "B": "T* = argmax_T Similarity(I1, T(I2))",
+                "C": "R = det(M)",
+                "D": "λ1 + λ2 = 0"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "Examples of similarity metrics used in pixel-based matching include:",
+              "choices": {
+                "A": "Sobel and Laplacian",
+                "B": "Sum of Squared Differences (SSD) and Mutual Information (MI)",
+                "C": "Histogram equalisation and gamma correction",
+                "D": "Median and Gaussian filtering"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "Matching by edges performs alignment using:",
+              "choices": {
+                "A": "Raw pixel intensities",
+                "B": "Edge maps extracted from the images",
+                "C": "Colour histograms only",
+                "D": "Bit depth information"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "Matching by interest points has the advantage of being efficient because:",
+              "choices": {
+                "A": "It uses all image pixels",
+                "B": "It uses only some selected keypoints instead of all pixels",
+                "C": "It requires no transformation estimation",
+                "D": "It avoids similarity metrics"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "An interest point is a point in the image that:",
+              "choices": {
+                "A": "Has a random intensity value",
+                "B": "Has a well-defined position and rich local structure",
+                "C": "Is located at the image border",
+                "D": "Is always the brightest pixel"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "An interest point should be stable under:",
+              "choices": {
+                "A": "Colour space conversion only",
+                "B": "Local and global perturbations (e.g., illumination variations)",
+                "C": "JPEG compression only",
+                "D": "Zero padding"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "A corner is defined as:",
+              "choices": {
+                "A": "A flat region",
+                "B": "An intersection of two edges",
+                "C": "A single bright pixel",
+                "D": "A noise spike"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "In a flat region, intensity change occurs:",
+              "choices": {
+                "A": "Along both directions",
+                "B": "Along one direction only",
+                "C": "In no direction",
+                "D": "Only diagonally"
+              },
+              "answer": "C"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "In an edge region, intensity change occurs:",
+              "choices": {
+                "A": "Along both directions",
+                "B": "Along just one direction",
+                "C": "In no direction",
+                "D": "Randomly"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "The matrix M used in the Harris detector is called:",
+              "choices": {
+                "A": "Covariance matrix",
+                "B": "Structure tensor",
+                "C": "Homography matrix",
+                "D": "Kernel matrix"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "The structure tensor M is computed from:",
+              "choices": {
+                "A": "Second derivatives only",
+                "B": "Local first derivatives Ix and Iy",
+                "C": "Histogram bins",
+                "D": "Colour channels only"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "Eigen decomposition of M allows interpretation in terms of:",
+              "choices": {
+                "A": "Pixel coordinates",
+                "B": "Eigenvalues λ1 and λ2",
+                "C": "Histogram bins",
+                "D": "Kernel size"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "If λ1 ≈ 0 and λ2 ≈ 0, the region is:",
+              "choices": {
+                "A": "Corner",
+                "B": "Edge",
+                "C": "Flat",
+                "D": "Blob"
+              },
+              "answer": "C"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "If λ1 ≫ λ2, the region is:",
+              "choices": {
+                "A": "Flat",
+                "B": "Edge",
+                "C": "Corner",
+                "D": "Noise"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "If λ1 ≈ λ2 and both are large, the region is:",
+              "choices": {
+                "A": "Flat",
+                "B": "Edge",
+                "C": "Corner",
+                "D": "Histogram peak"
+              },
+              "answer": "C"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "The Harris cornerness measure is defined as:",
+              "choices": {
+                "A": "R = λ1 + λ2",
+                "B": "R = λ1λ2 − k(λ1 + λ2)^2",
+                "C": "R = min(λ1, λ2)",
+                "D": "R = λ1 − λ2"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "The Harris response can be written without eigen decomposition as:",
+              "choices": {
+                "A": "R = trace(M)",
+                "B": "R = det(M) − k(trace(M))^2",
+                "C": "R = Ix + Iy",
+                "D": "R = λ1λ2"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "The Kanade–Tomasi cornerness measure is defined as:",
+              "choices": {
+                "A": "R = λ1 + λ2",
+                "B": "R = min(λ1, λ2)",
+                "C": "R = λ1 − λ2",
+                "D": "R = det(M)"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "The Noble cornerness measure is defined as:",
+              "choices": {
+                "A": "R = λ1λ2 / (λ1 + λ2 + ε)",
+                "B": "R = λ1 + λ2",
+                "C": "R = min(λ1, λ2)",
+                "D": "R = trace(M)"
+              },
+              "answer": "A"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "The first step of the Harris detector is:",
+              "choices": {
+                "A": "Thresholding",
+                "B": "Compute image derivatives Ix and Iy",
+                "C": "Eigen decomposition",
+                "D": "Match descriptors"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "After computing the Harris response R, the next key step is:",
+              "choices": {
+                "A": "Colour conversion",
+                "B": "Thresholding and non-maximum suppression",
+                "C": "Histogram equalisation",
+                "D": "Gaussian blur"
+              },
+              "answer": "B"
+            },
+            {
+              "section": "image-matching-interest-point-detection-and-feature-descriptors",
+              "question": "A feature descriptor is:",
+              "choices": {
+                "A": "A transformation matrix",
+                "B": "A representation of the local image neighbourhood around a keypoint",
+                "C": "A colour space",
+                "D": "A histogram equalisation method"
+              },
+              "answer": "B"
+            },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "The limitation of the basic Harris detector is that it is not invariant to:",
+                "choices": {
+                  "A": "Translation",
+                  "B": "Rotation",
+                  "C": "Scale changes",
+                  "D": "Intensity shifts"
+                },
+                "answer": "C"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "The scale-adapted Harris detector addresses invariance to:",
+                "choices": {
+                  "A": "Colour changes",
+                  "B": "Scale changes",
+                  "C": "Histogram stretching",
+                  "D": "JPEG compression"
+                },
+                "answer": "B"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "Scale selection in scale-adapted detectors is achieved by:",
+                "choices": {
+                  "A": "Using a fixed window size",
+                  "B": "Analysing the response across multiple scales",
+                  "C": "Applying histogram equalisation",
+                  "D": "Using only Sobel filters"
+                },
+                "answer": "B"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "The Laplacian-based detector relies on:",
+                "choices": {
+                  "A": "First derivatives only",
+                  "B": "Second derivatives (Laplacian operator)",
+                  "C": "Median filtering",
+                  "D": "Histogram matching"
+                },
+                "answer": "B"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "The Laplacian operator is defined as:",
+                "choices": {
+                  "A": "Ix + Iy",
+                  "B": "Ix^2 + Iy^2",
+                  "C": "Ixx + Iyy",
+                  "D": "det(M)"
+                },
+                "answer": "C"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "The Scale-Invariant Feature Transform (SIFT) detector is designed to be invariant to:",
+                "choices": {
+                  "A": "Colour space only",
+                  "B": "Scale and rotation",
+                  "C": "Bit depth",
+                  "D": "JPEG compression only"
+                },
+                "answer": "B"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "SIFT detects keypoints by searching for extrema in:",
+                "choices": {
+                  "A": "Histogram bins",
+                  "B": "Difference-of-Gaussians (DoG) scale space",
+                  "C": "Median filter outputs",
+                  "D": "Raw pixel values only"
+                },
+                "answer": "B"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "Difference-of-Gaussians (DoG) is used in SIFT as an approximation of:",
+                "choices": {
+                  "A": "The gradient magnitude",
+                  "B": "The Laplacian of Gaussian",
+                  "C": "The median filter",
+                  "D": "The homography"
+                },
+                "answer": "B"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "SIFT assigns an orientation to each keypoint in order to achieve:",
+                "choices": {
+                  "A": "Colour invariance",
+                  "B": "Rotation invariance",
+                  "C": "Scale invariance only",
+                  "D": "Histogram invariance"
+                },
+                "answer": "B"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "A SIFT descriptor represents:",
+                "choices": {
+                  "A": "A global histogram of the entire image",
+                  "B": "Local gradient orientation histograms around a keypoint",
+                  "C": "Raw pixel intensities only",
+                  "D": "Colour channel averages"
+                },
+                "answer": "B"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "The dimensionality of a standard SIFT descriptor is:",
+                "choices": {
+                  "A": "32",
+                  "B": "64",
+                  "C": "128",
+                  "D": "256"
+                },
+                "answer": "C"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "Speeded-Up Robust Features (SURF) were introduced to:",
+                "choices": {
+                  "A": "Increase descriptor dimensionality",
+                  "B": "Provide a faster alternative to SIFT",
+                  "C": "Remove scale invariance",
+                  "D": "Replace Harris detector only"
+                },
+                "answer": "B"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "SURF approximates the Hessian matrix using:",
+                "choices": {
+                  "A": "Sobel filters",
+                  "B": "Box filters and integral images",
+                  "C": "Median filters",
+                  "D": "Histogram equalisation"
+                },
+                "answer": "B"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "A feature descriptor is used to:",
+                "choices": {
+                  "A": "Estimate image resolution",
+                  "B": "Describe the local neighbourhood of a keypoint for matching",
+                  "C": "Perform thresholding",
+                  "D": "Compute eigenvalues"
+                },
+                "answer": "B"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "Feature matching consists of:",
+                "choices": {
+                  "A": "Comparing descriptor vectors between images",
+                  "B": "Matching raw pixel grids directly",
+                  "C": "Matching histograms only",
+                  "D": "Matching colour spaces"
+                },
+                "answer": "A"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "After finding correspondences between keypoints, the next step is to:",
+                "choices": {
+                  "A": "Apply histogram equalisation",
+                  "B": "Estimate the transformation that best aligns the images",
+                  "C": "Apply Gaussian blur",
+                  "D": "Convert to grayscale"
+                },
+                "answer": "B"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "The transformation estimated from matched keypoints may be:",
+                "choices": {
+                  "A": "Rigid, affine, or projective",
+                  "B": "Only translation",
+                  "C": "Only colour-based",
+                  "D": "Only histogram-based"
+                },
+                "answer": "A"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "Interest point detection and feature description are separated because:",
+                "choices": {
+                  "A": "Detection finds locations, description encodes local appearance",
+                  "B": "Detection performs matching",
+                  "C": "Description finds corners",
+                  "D": "They are mathematically identical"
+                },
+                "answer": "A"
+              },
+              {
+                "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                "question": "Repeatability of a detector refers to:",
+                "choices": {
+                  "A": "Number of pixels detected",
+                  "B": "Ability to detect the same keypoints under different conditions",
+                  "C": "Descriptor dimensionality",
+                  "D": "Kernel size"
+                },
+                "answer": "B"
+              },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "The limitation of the basic Harris detector is that it is not invariant to:",
+                  "choices": {
+                    "A": "Translation",
+                    "B": "Rotation",
+                    "C": "Scale changes",
+                    "D": "Intensity shifts"
+                  },
+                  "answer": "C"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "The scale-adapted Harris detector addresses invariance to:",
+                  "choices": {
+                    "A": "Colour changes",
+                    "B": "Scale changes",
+                    "C": "Histogram stretching",
+                    "D": "JPEG compression"
+                  },
+                  "answer": "B"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "Scale selection in scale-adapted detectors is achieved by:",
+                  "choices": {
+                    "A": "Using a fixed window size",
+                    "B": "Analysing the response across multiple scales",
+                    "C": "Applying histogram equalisation",
+                    "D": "Using only Sobel filters"
+                  },
+                  "answer": "B"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "The Laplacian-based detector relies on:",
+                  "choices": {
+                    "A": "First derivatives only",
+                    "B": "Second derivatives (Laplacian operator)",
+                    "C": "Median filtering",
+                    "D": "Histogram matching"
+                  },
+                  "answer": "B"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "The Laplacian operator is defined as:",
+                  "choices": {
+                    "A": "Ix + Iy",
+                    "B": "Ix^2 + Iy^2",
+                    "C": "Ixx + Iyy",
+                    "D": "det(M)"
+                  },
+                  "answer": "C"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "The Scale-Invariant Feature Transform (SIFT) detector is designed to be invariant to:",
+                  "choices": {
+                    "A": "Colour space only",
+                    "B": "Scale and rotation",
+                    "C": "Bit depth",
+                    "D": "JPEG compression only"
+                  },
+                  "answer": "B"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "SIFT detects keypoints by searching for extrema in:",
+                  "choices": {
+                    "A": "Histogram bins",
+                    "B": "Difference-of-Gaussians (DoG) scale space",
+                    "C": "Median filter outputs",
+                    "D": "Raw pixel values only"
+                  },
+                  "answer": "B"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "Difference-of-Gaussians (DoG) is used in SIFT as an approximation of:",
+                  "choices": {
+                    "A": "The gradient magnitude",
+                    "B": "The Laplacian of Gaussian",
+                    "C": "The median filter",
+                    "D": "The homography"
+                  },
+                  "answer": "B"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "SIFT assigns an orientation to each keypoint in order to achieve:",
+                  "choices": {
+                    "A": "Colour invariance",
+                    "B": "Rotation invariance",
+                    "C": "Scale invariance only",
+                    "D": "Histogram invariance"
+                  },
+                  "answer": "B"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "A SIFT descriptor represents:",
+                  "choices": {
+                    "A": "A global histogram of the entire image",
+                    "B": "Local gradient orientation histograms around a keypoint",
+                    "C": "Raw pixel intensities only",
+                    "D": "Colour channel averages"
+                  },
+                  "answer": "B"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "The dimensionality of a standard SIFT descriptor is:",
+                  "choices": {
+                    "A": "32",
+                    "B": "64",
+                    "C": "128",
+                    "D": "256"
+                  },
+                  "answer": "C"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "Speeded-Up Robust Features (SURF) were introduced to:",
+                  "choices": {
+                    "A": "Increase descriptor dimensionality",
+                    "B": "Provide a faster alternative to SIFT",
+                    "C": "Remove scale invariance",
+                    "D": "Replace Harris detector only"
+                  },
+                  "answer": "B"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "SURF approximates the Hessian matrix using:",
+                  "choices": {
+                    "A": "Sobel filters",
+                    "B": "Box filters and integral images",
+                    "C": "Median filters",
+                    "D": "Histogram equalisation"
+                  },
+                  "answer": "B"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "A feature descriptor is used to:",
+                  "choices": {
+                    "A": "Estimate image resolution",
+                    "B": "Describe the local neighbourhood of a keypoint for matching",
+                    "C": "Perform thresholding",
+                    "D": "Compute eigenvalues"
+                  },
+                  "answer": "B"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "Feature matching consists of:",
+                  "choices": {
+                    "A": "Comparing descriptor vectors between images",
+                    "B": "Matching raw pixel grids directly",
+                    "C": "Matching histograms only",
+                    "D": "Matching colour spaces"
+                  },
+                  "answer": "A"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "After finding correspondences between keypoints, the next step is to:",
+                  "choices": {
+                    "A": "Apply histogram equalisation",
+                    "B": "Estimate the transformation that best aligns the images",
+                    "C": "Apply Gaussian blur",
+                    "D": "Convert to grayscale"
+                  },
+                  "answer": "B"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "The transformation estimated from matched keypoints may be:",
+                  "choices": {
+                    "A": "Rigid, affine, or projective",
+                    "B": "Only translation",
+                    "C": "Only colour-based",
+                    "D": "Only histogram-based"
+                  },
+                  "answer": "A"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "Interest point detection and feature description are separated because:",
+                  "choices": {
+                    "A": "Detection finds locations, description encodes local appearance",
+                    "B": "Detection performs matching",
+                    "C": "Description finds corners",
+                    "D": "They are mathematically identical"
+                  },
+                  "answer": "A"
+                },
+                {
+                  "section": "image-matching-interest-point-detection-and-feature-descriptors",
+                  "question": "Repeatability of a detector refers to:",
+                  "choices": {
+                    "A": "Number of pixels detected",
+                    "B": "Ability to detect the same keypoints under different conditions",
+                    "C": "Descriptor dimensionality",
+                    "D": "Kernel size"
+                  },
+                  "answer": "B"
+                }
+    
 ]
