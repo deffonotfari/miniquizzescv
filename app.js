@@ -1,20 +1,25 @@
-// app.js (fixed + debug)
 let allQuestions = [];
 let questions = [];
 let currentIndex = 0;
 let currentSection = null;
 
+// "all" = normal run through the whole section
+// "wrong" = only questions previously answered incorrectly in this section
+let quizMode = "all";
+
 const STORAGE_KEY = "quizProgress_v2";
-
-
 
 const SECTION_META = {
   "digital-images-and-image-processing": "Digital images and image processing",
   "image-filtering-and-edge-detection": "Image filtering and edge detection",
-  "image-matching-interest-point-detection-and-feature-descriptors": "Image matching: interest point detection and feature descriptors"
+  "image-matching-interest-point-detection-and-feature-descriptors":
+    "Image matching: interest point detection and feature descriptors"
 };
+
 /** ---------- Helpers ---------- **/
-function $(id) { return document.getElementById(id); }
+function $(id) {
+  return document.getElementById(id);
+}
 
 function showError(msg) {
   console.error(msg);
@@ -39,17 +44,19 @@ function loadProgress() {
     return { answered: {} };
   }
 }
+
 function saveProgress(p) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
 }
+
 function resetProgress() {
   localStorage.removeItem(STORAGE_KEY);
   location.reload();
 }
+
 window.resetProgress = resetProgress;
 
 function getQuestionById(id) {
-  // IDs are strings
   return allQuestions.find(q => String(q.id) === String(id));
 }
 
@@ -58,6 +65,7 @@ function computeSectionScore(sectionKey) {
   const sectionQs = allQuestions.filter(q => q.section === sectionKey);
   let answered = 0;
   let correct = 0;
+
   sectionQs.forEach(q => {
     const rec = progress.answered?.[q.id];
     if (rec) {
@@ -65,14 +73,14 @@ function computeSectionScore(sectionKey) {
       if (rec.correct) correct++;
     }
   });
+
   return { answered, correct, total: sectionQs.length };
 }
 
 function updateSectionScoreUI() {
   const scoreEl = $("sectionScore");
   const counterEl = $("questionCounter");
-  // If the quiz HTML is older / cached and doesn't include the score row,
-  // create it dynamically so the feature always shows up.
+
   if (!scoreEl || !counterEl) {
     const container = document.querySelector(".container");
     const progressBar = document.querySelector(".progress-bar");
@@ -92,8 +100,6 @@ function updateSectionScoreUI() {
 
         row.appendChild(counter);
         row.appendChild(score);
-
-        // Insert right after the progress bar
         progressBar.insertAdjacentElement("afterend", row);
       }
     }
@@ -101,32 +107,34 @@ function updateSectionScoreUI() {
 
   const scoreEl2 = $("sectionScore");
   const counterEl2 = $("questionCounter");
-  if (!scoreEl2 && !counterEl2) return;
 
-  // Question counter (where you are in this section)
   if (counterEl2) {
     const shownIndex = Math.min(currentIndex + 1, questions.length || 1);
     counterEl2.innerText = `Question ${shownIndex}/${questions.length || 1}`;
   }
 
-  // Score for this section (persisted via localStorage)
   if (scoreEl2) {
     const s = computeSectionScore(currentSection);
-    const pct = s.answered ? Math.round((s.correct / s.answered) * 100) : 0;
+    const pct = s.answered
+      ? Math.round((s.correct / s.answered) * 100)
+      : 0;
     scoreEl2.innerText = `Score: ${s.correct}/${s.answered} (${pct}%)`;
   }
 }
 
 /** ---------- Load Questions ---------- **/
 async function loadQuestionsJson() {
-  // cache-bust so browser doesn’t use an old file
-  const res = await fetch("questions.json?v=" + Date.now());
-  if (!res.ok) throw new Error("Could not load questions.json (HTTP " + res.status + ")");
+  const res = await fetch("./questions.json?v=" + Date.now());
+  if (!res.ok)
+    throw new Error(
+      "Could not load questions.json (HTTP " + res.status + ")"
+    );
+
   const data = await res.json();
 
-  if (!Array.isArray(data)) throw new Error("questions.json must be an array [ ... ]");
+  if (!Array.isArray(data))
+    throw new Error("questions.json must be an array [ ... ]");
 
-  // Validate minimum structure
   for (let i = 0; i < data.length; i++) {
     const q = data[i];
     if (!q.section || !q.question || !q.choices || !q.answer) {
@@ -134,8 +142,9 @@ async function loadQuestionsJson() {
     }
   }
 
-  // Add stable IDs (so progress works)
-  data.forEach((q, idx) => { if (!q.id) q.id = String(idx + 1); });
+  data.forEach((q, idx) => {
+    if (!q.id) q.id = String(idx + 1);
+  });
 
   return data;
 }
@@ -146,30 +155,31 @@ function initHome() {
   const answeredCount = Object.keys(progress.answered).length;
   const total = allQuestions.length;
 
-  const pct = total ? Math.round((answeredCount / total) * 100) : 0;
+  const pct = total
+    ? Math.round((answeredCount / total) * 100)
+    : 0;
+
   const bar = $("overallProgress");
   const txt = $("progressText");
 
   if (bar) bar.style.width = pct + "%";
   if (txt) txt.innerText = pct + "%";
-
-  // Optional: show totals if you add elements later
 }
 
 /** ---------- Quiz Page ---------- **/
 function loadQuestion() {
   if (!questions.length) {
     showError(
-      "No questions found for this section. " +
-      "Check that your questions.json uses one of these section keys: " + Object.keys(SECTION_META).join(", ") +
-      " and your URL is quiz.html?section=<section-key>."
+      "No questions found for this section. Check that your questions.json uses a valid section key."
     );
     return;
   }
 
   if (currentIndex >= questions.length) {
-    // go to results page when finished
-    location.href = "results.html";
+    const qs = new URLSearchParams();
+    if (currentSection) qs.set("section", currentSection);
+    if (quizMode === "wrong") qs.set("mode", "wrong");
+    location.href = "results.html?" + qs.toString();
     return;
   }
 
@@ -195,66 +205,109 @@ function loadQuestion() {
 }
 
 function checkAnswer(q, selectedKey) {
-    const correctKey = q.answer;
-    const buttons = document.querySelectorAll("#choices button");
-    const feedback = document.getElementById("feedback");
-  
-    // Disable all buttons after selection
-    buttons.forEach(btn => btn.disabled = true);
-  
-    buttons.forEach(btn => {
-      const btnKey = btn.innerText.trim().charAt(0); // first letter A/B/C/D
-  
-      if (btnKey === correctKey) {
-        btn.classList.add("correct");
-      }
-  
-      if (btnKey === selectedKey && selectedKey !== correctKey) {
-        btn.classList.add("wrong");
-      }
-    });
-  
-    if (selectedKey === correctKey) {
-      feedback.style.color = "#1e8e3e";
-      feedback.innerText = "Correct!";
-    } else {
-      feedback.style.color = "#d93025";
-      feedback.innerText = "Wrong! Correct answer: " + correctKey;
-    }
-  
-    // Save progress
-    const progress = loadProgress();
-    progress.answered[q.id] = {
-      chosen: selectedKey,
-      correct: selectedKey === correctKey
-    };
-    saveProgress(progress);
+  const correctKey = q.answer;
+  const buttons = document.querySelectorAll("#choices button");
+  const feedback = $("feedback");
 
-    // Update per-section score UI immediately after answering
-    updateSectionScoreUI();
+  buttons.forEach(btn => (btn.disabled = true));
+
+  buttons.forEach(btn => {
+    const btnKey = btn.innerText.trim().charAt(0);
+    if (btnKey === correctKey) btn.classList.add("correct");
+    if (btnKey === selectedKey && selectedKey !== correctKey)
+      btn.classList.add("wrong");
+  });
+
+  if (selectedKey === correctKey) {
+    feedback.style.color = "#1e8e3e";
+    feedback.innerText = "Correct!";
+  } else {
+    feedback.style.color = "#d93025";
+    feedback.innerText =
+      "Wrong! Correct answer: " + correctKey;
   }
+
+  const progress = loadProgress();
+  progress.answered[q.id] = {
+    chosen: selectedKey,
+    correct: selectedKey === correctKey
+  };
+  saveProgress(progress);
+
+  updateSectionScoreUI();
+}
 
 function updateSectionProgress() {
   const bar = $("sectionProgress");
   if (!bar) return;
-  const pct = questions.length ? Math.round((currentIndex / questions.length) * 100) : 0;
+  const pct = questions.length
+    ? Math.round((currentIndex / questions.length) * 100)
+    : 0;
   bar.style.width = pct + "%";
 }
 
 /** ---------- Results Page ---------- **/
 function initResults() {
   const progress = loadProgress();
-  const answeredIds = Object.keys(progress.answered);
+  const params = new URLSearchParams(window.location.search);
+  const section = params.get("section");
+  const mode = params.get("mode");
 
+  const scopeQs = section
+    ? allQuestions.filter(q => q.section === section)
+    : allQuestions;
+
+  let answered = 0;
   let correct = 0;
-  answeredIds.forEach(id => {
-    if (progress.answered[id].correct) correct++;
+  let wrongIds = [];
+
+  scopeQs.forEach(q => {
+    const rec = progress.answered?.[q.id];
+    if (rec) {
+      answered++;
+      if (rec.correct) correct++;
+      else wrongIds.push(q.id);
+    }
   });
 
-  if ($("answered")) $("answered").innerText = answeredIds.length;
+  if ($("answered")) $("answered").innerText = answered;
   if ($("correct")) $("correct").innerText = correct;
-  if ($("accuracy")) {
-    $("accuracy").innerText = answeredIds.length ? Math.round((correct / answeredIds.length) * 100) : 0;
+  if ($("accuracy"))
+    $("accuracy").innerText = answered
+      ? Math.round((correct / answered) * 100)
+      : 0;
+
+  const title = $("resultsTitle");
+  if (title) {
+    if (section) {
+      title.innerText =
+        (SECTION_META[section] || section) + " — Results";
+      if (mode === "wrong")
+        title.innerText =
+          (SECTION_META[section] || section) +
+          " — Wrong Questions Review";
+    } else {
+      title.innerText = "Overall Results";
+    }
+  }
+
+  const reviewWrap = $("reviewWrongWrap");
+  const reviewBtn = $("reviewWrongBtn");
+  const wrongCount = $("wrongCount");
+
+  if (reviewWrap && reviewBtn && wrongCount) {
+    if (section && wrongIds.length > 0) {
+      wrongCount.innerText = String(wrongIds.length);
+      reviewBtn.onclick = () => {
+        const qp = new URLSearchParams();
+        qp.set("section", section);
+        qp.set("mode", "wrong");
+        location.href = "quiz.html?" + qp.toString();
+      };
+      reviewWrap.style.display = "block";
+    } else {
+      reviewWrap.style.display = "none";
+    }
   }
 }
 
@@ -263,26 +316,56 @@ function initResults() {
   try {
     allQuestions = await loadQuestionsJson();
   } catch (err) {
-    showError(err.message + "\n\nMost common fix: run a local server (python3 -m http.server 8000) and open http://localhost:8000/");
+    showError(
+      err.message +
+        "\n\nIf deployed on GitHub Pages, ensure questions.json exists in the same folder as app.js."
+    );
     return;
   }
 
-  // Detect section from URL (quiz page)
   const params = new URLSearchParams(window.location.search);
-  currentSection = params.get("section"); // one of the keys in SECTION_META
+  currentSection = params.get("section");
+  quizMode = params.get("mode") === "wrong" ? "wrong" : "all";
 
   if ($("questionText")) {
-    // quiz page
     if (!currentSection) {
-      showError("Missing section in URL. Use quiz.html?section=<section-key>, where <section-key> is one of: " + Object.keys(SECTION_META).join(", "));
+      showError(
+        "Missing section in URL. Use quiz.html?section=<section-key>."
+      );
       return;
     }
 
-    questions = allQuestions.filter(q => q.section === currentSection);
+    const sectionQs = allQuestions.filter(
+      q => q.section === currentSection
+    );
 
-    // set title if present
+    if (quizMode === "wrong") {
+      const prog = loadProgress();
+      questions = sectionQs.filter(q => {
+        const rec = prog.answered?.[q.id];
+        return rec && rec.correct === false;
+      });
+    } else {
+      questions = sectionQs;
+    }
+
+    if (quizMode === "wrong" && questions.length === 0) {
+      const qs = new URLSearchParams();
+      qs.set("section", currentSection);
+      qs.set("mode", "wrong");
+      location.href = "results.html?" + qs.toString();
+      return;
+    }
+
     const title = $("sectionTitle");
-    if (title) title.innerText = "Quiz — " + (SECTION_META[currentSection] || currentSection);
+    if (title) {
+      const base =
+        SECTION_META[currentSection] || currentSection;
+      title.innerText =
+        quizMode === "wrong"
+          ? `Review Wrong — ${base}`
+          : `Quiz — ${base}`;
+    }
 
     $("nextBtn")?.addEventListener("click", () => {
       currentIndex++;
@@ -291,10 +374,8 @@ function initResults() {
 
     loadQuestion();
   } else if ($("overallProgress")) {
-    // home page
     initHome();
   } else if ($("answered")) {
-    // results page
     initResults();
   }
 })();
