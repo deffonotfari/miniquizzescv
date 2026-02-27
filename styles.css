@@ -1,0 +1,323 @@
+/* styles.css — Google Quiz style */
+:root{
+    --bg: #f1f3f4;
+    --card: #ffffff;
+    --text: #202124;
+    --muted: #5f6368;
+    --border: #dadce0;
+    --accent: #673ab7;      /* Google Forms purple */
+    --accent-weak: #ede7f6;
+    --ok: #1e8e3e;
+    --bad: #d93025;
+    --shadow: 0 1px 2px rgba(60,64,67,.1), 0 1px 3px 1px rgba(60,64,67,.08);
+  }
+  
+  *{ box-sizing:border-box; }
+  html{
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  body{
+    margin:0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+  
+  /* Top bar */
+  header{
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: calc(14px + env(safe-area-inset-top))
+             calc(18px + env(safe-area-inset-right))
+             14px
+             calc(18px + env(safe-area-inset-left));
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  header h1{
+    margin:0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  nav a{
+    color: var(--muted);
+    text-decoration:none;
+    margin-left: 14px;
+    font-weight: 500;
+    padding: 6px 0;
+  }
+  nav a:hover{ color: var(--text); }
+  
+  /* Layout */
+  .container{
+    max-width: 760px;
+    margin: 20px auto;
+    padding: 0 calc(14px + env(safe-area-inset-right)) 40px calc(14px + env(safe-area-inset-left));
+  }
+  
+  /* Quiz card */
+  .card{
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    overflow:hidden;
+  }
+  
+  /* Purple top strip like Google Forms */
+  .card::before{
+    content:"";
+    display:block;
+    height: 10px;
+    background: var(--accent);
+  }
+  
+  /* Card body */
+  .card-body{ padding: 18px; }
+  
+  .title{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+  }
+  .subtitle{
+    margin:0 0 14px 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  
+  /* Progress */
+  .progress-wrap{
+    margin: 10px 0 0 0;
+  }
+  .progress-label{
+    font-size: 12px;
+    color: var(--muted);
+    display:flex;
+    justify-content:space-between;
+  }
+  .progress-bar{
+    width:100%;
+    height: 6px;
+    background: #e8eaed;
+    border-radius: 999px;
+    overflow:hidden;
+    margin-top: 6px;
+  }
+  .progress-bar div{
+    height:100%;
+    width:0%;
+    background: var(--accent);
+  }
+
+  /* Quiz score row */
+  .score-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 10px 0 14px 0;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    background: #fafafa;
+    border-radius: 10px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  /* Buttons */
+  button{ font: inherit; }
+  button:not(.btn){
+    appearance:none;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-weight: 500;
+    cursor:pointer;
+    min-height: 44px; /* iOS comfortable touch target */
+  }
+  button:not(.btn):hover{ background:#fafafa; }
+
+  .btn{
+    appearance:none;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-weight: 500;
+    cursor:pointer;
+    min-height: 44px; /* iOS comfortable touch target */
+  }
+  .btn:hover{ background:#fafafa; }
+  .btn.primary{
+    border-color: var(--accent);
+    background: var(--accent);
+    color: white;
+  }
+  .btn.primary:hover{ filter: brightness(0.97); }
+  
+  /* Section buttons on home */
+  .section-buttons a.btn{
+    display:block;
+    text-align:left;
+    text-decoration:none;
+    margin: 10px 0;
+    white-space: normal;
+    line-height: 1.35;
+  }
+
+  /* Home page progress box */
+  .progress-box{
+    margin-top: 18px;
+    padding: 14px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+  .progress-box h3{ margin: 0 0 10px 0; font-size: 14px; }
+  .progress-box p{ margin: 10px 0 12px 0; color: var(--muted); }
+  
+  /* Question text */
+  #questionText, .questionText{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+  }
+  
+  /* Choices - Google Forms radio-like buttons */
+  #choices button{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap: 12px;
+    margin: 10px 0;
+    padding: 12px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    cursor:pointer;
+    text-align:left;
+    font-size: 14px;
+    min-height: 48px; /* comfy tap area */
+  }
+  #choices button:hover{
+    background: #fafafa;
+    border-color: #cfd3d7;
+  }
+  #choices button::before{
+    content:"";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #9aa0a6;
+    display:inline-block;
+    flex: 0 0 auto;
+  }
+  #choices button.correct{
+    border-color: rgba(30,142,62,.35);
+    background: rgba(30,142,62,.06);
+  }
+  #choices button.correct::before{
+    border-color: var(--ok);
+    box-shadow: inset 0 0 0 4px var(--ok);
+  }
+  #choices button.wrong{
+    border-color: rgba(217,48,37,.35);
+    background: rgba(217,48,37,.06);
+  }
+  #choices button.wrong::before{
+    border-color: var(--bad);
+    box-shadow: inset 0 0 0 4px var(--bad);
+  }
+  
+  /* Feedback box */
+  #feedback, #errorBox{
+    margin-top: 12px;
+    padding: 12px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: #fafafa;
+    color: var(--muted);
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+  
+  /* Bottom action row (Back/Next) */
+  .actions{
+    display:flex;
+    justify-content:space-between;
+    gap: 10px;
+    margin-top: 14px;
+  }
+  
+  /* Results page */
+  .stat{
+    display:flex;
+    justify-content:space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .stat:last-child{ border-bottom:0; }
+  .small{
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  #choices button.correct {
+    background-color: rgba(30,142,62,0.1);
+    border: 1px solid #1e8e3e;
+    color: #1e8e3e;
+  }
+  
+  #choices button.wrong {
+    background-color: rgba(217,48,37,0.1);
+    border: 1px solid #d93025;
+    color: #d93025;
+  }
+
+  #choices button {
+    transition: all 0.2s ease;
+  }
+
+  /* --- Mobile tweaks (iPhone 16 Pro Max and smaller) --- */
+  @media (max-width: 480px){
+    .container{
+      margin: 14px auto;
+      padding-bottom: 28px;
+    }
+
+    header h1{ font-size: 15px; }
+
+    nav{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    nav a{ margin-left: 0; }
+
+    #questionText, .questionText{ font-size: 17px; }
+
+    .score-row{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+    }
+
+    /* Full-width primary actions */
+    #nextBtn,
+    .progress-box button,
+    .container > button{
+      width: 100%;
+    }
+  }

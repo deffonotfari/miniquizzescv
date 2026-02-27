@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1 id="sectionTitle">Quiz</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="results.html">Results</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="progress-bar">
+        <div id="sectionProgress"></div>
+    </div>
+
+    <div class="score-row">
+        <span id="questionCounter">Question 1/1</span>
+        <span id="sectionScore">Score: 0/0</span>
+    </div>
+
+    <h2 id="questionText"></h2>
+
+    <div id="choices"></div>
+
+    <div id="feedback"></div>
+
+    <button id="nextBtn" class="btn primary">Next Question</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Mini Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Computer Vision Quiz</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="results.html">Results</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Select Section</h2>
+
+    <div class="section-buttons">
+        <a href="quiz.html?section=digital-images-and-image-processing" class="btn">Digital images and image processing</a>
+        <a href="quiz.html?section=image-filtering-and-edge-detection" class="btn">Image filtering and edge detection</a>
+        <a href="quiz.html?section=image-matching-interest-point-detection-and-feature-descriptors" class="btn">Image matching: interest point detection and feature descriptors</a>
+    </div>
+
+    <div class="progress-box">
+        <h3>Overall Progress</h3>
+        <div class="progress-bar">
+            <div id="overallProgress"></div>
+        </div>
+        <p id="progressText">0%</p>
+        <button class="btn" onclick="resetProgress()">Reset Progress</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
