@@ -3366,28 +3366,15 @@
     },
     "answer": "A"
   },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
   {
     "section": "image-matching-interest-point-detection-and-feature-descriptors",
     "question": "In SIFT, the orientation histogram per subregion typically has:",
@@ -3399,6 +3386,55 @@
     },
     "answer": "B"
   },
+  
+  
+  
+  {
+    "section": "image-matching-interest-point-detection-and-feature-descriptors",
+    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
+    "choices": {
+      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
+      "B": "They are always too dark",
+      "C": "They violate commutativity",
+      "D": "They increase JPEG artefacts"
+    },
+    "answer": "A"
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  {
+    "section": "image-matching-interest-point-detection-and-feature-descriptors",
+    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
+    "choices": {
+      "A": "Gradient magnitude",
+      "B": "Pixel intensity only",
+      "C": "PPI",
+      "D": "JPEG quality factor"
+    },
+    "answer": "A"
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   {
     "section": "image-matching-interest-point-detection-and-feature-descriptors",
     "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
@@ -3410,6 +3446,25 @@
     },
     "answer": "A"
   },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   {
     "section": "image-matching-interest-point-detection-and-feature-descriptors",
     "question": "Why do we need a feature descriptor after detecting keypoints?",
@@ -3421,809 +3476,26 @@
     },
     "answer": "A"
   },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
-    "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
-    },
-    "answer": "B"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "Why do we need a feature descriptor after detecting keypoints?",
-    "choices": {
-      "A": "To describe each keypoint so similarity can be evaluated across images",
-      "B": "To increase image resolution",
-      "C": "To remove noise by smoothing",
-      "D": "To compute the histogram CDF"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
-    "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
-    },
-    "answer": "B"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "Why do we need a feature descriptor after detecting keypoints?",
-    "choices": {
-      "A": "To describe each keypoint so similarity can be evaluated across images",
-      "B": "To increase image resolution",
-      "C": "To remove noise by smoothing",
-      "D": "To compute the histogram CDF"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
-    "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
-    },
-    "answer": "B"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "Why do we need a feature descriptor after detecting keypoints?",
-    "choices": {
-      "A": "To describe each keypoint so similarity can be evaluated across images",
-      "B": "To increase image resolution",
-      "C": "To remove noise by smoothing",
-      "D": "To compute the histogram CDF"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
-    "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
-    },
-    "answer": "B"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "Why do we need a feature descriptor after detecting keypoints?",
-    "choices": {
-      "A": "To describe each keypoint so similarity can be evaluated across images",
-      "B": "To increase image resolution",
-      "C": "To remove noise by smoothing",
-      "D": "To compute the histogram CDF"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
-    "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
-    },
-    "answer": "B"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "Why do we need a feature descriptor after detecting keypoints?",
-    "choices": {
-      "A": "To describe each keypoint so similarity can be evaluated across images",
-      "B": "To increase image resolution",
-      "C": "To remove noise by smoothing",
-      "D": "To compute the histogram CDF"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
-    "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
-    },
-    "answer": "B"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "Why do we need a feature descriptor after detecting keypoints?",
-    "choices": {
-      "A": "To describe each keypoint so similarity can be evaluated across images",
-      "B": "To increase image resolution",
-      "C": "To remove noise by smoothing",
-      "D": "To compute the histogram CDF"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
-    "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
-    },
-    "answer": "B"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "Why do we need a feature descriptor after detecting keypoints?",
-    "choices": {
-      "A": "To describe each keypoint so similarity can be evaluated across images",
-      "B": "To increase image resolution",
-      "C": "To remove noise by smoothing",
-      "D": "To compute the histogram CDF"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
-    "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
-    },
-    "answer": "B"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "Why do we need a feature descriptor after detecting keypoints?",
-    "choices": {
-      "A": "To describe each keypoint so similarity can be evaluated across images",
-      "B": "To increase image resolution",
-      "C": "To remove noise by smoothing",
-      "D": "To compute the histogram CDF"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
-    "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
-    },
-    "answer": "B"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "Why do we need a feature descriptor after detecting keypoints?",
-    "choices": {
-      "A": "To describe each keypoint so similarity can be evaluated across images",
-      "B": "To increase image resolution",
-      "C": "To remove noise by smoothing",
-      "D": "To compute the histogram CDF"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
-    "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
-    },
-    "answer": "B"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "Why do we need a feature descriptor after detecting keypoints?",
-    "choices": {
-      "A": "To describe each keypoint so similarity can be evaluated across images",
-      "B": "To increase image resolution",
-      "C": "To remove noise by smoothing",
-      "D": "To compute the histogram CDF"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
-    "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
-    },
-    "answer": "B"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "Why do we need a feature descriptor after detecting keypoints?",
-    "choices": {
-      "A": "To describe each keypoint so similarity can be evaluated across images",
-      "B": "To increase image resolution",
-      "C": "To remove noise by smoothing",
-      "D": "To compute the histogram CDF"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
-    "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
-    },
-    "answer": "B"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "Why do we need a feature descriptor after detecting keypoints?",
-    "choices": {
-      "A": "To describe each keypoint so similarity can be evaluated across images",
-      "B": "To increase image resolution",
-      "C": "To remove noise by smoothing",
-      "D": "To compute the histogram CDF"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
-    "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
-    },
-    "answer": "B"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "Why do we need a feature descriptor after detecting keypoints?",
-    "choices": {
-      "A": "To describe each keypoint so similarity can be evaluated across images",
-      "B": "To increase image resolution",
-      "C": "To remove noise by smoothing",
-      "D": "To compute the histogram CDF"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
-    "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
-    },
-    "answer": "B"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
-    "choices": {
-      "A": "Robustness to intensity scaling (orientation) and robustness to rotation (histogram)",
-      "B": "Compression and demosaicing",
-      "C": "Bit depth and PPI",
-      "D": "HSV and CMYK"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "Why do we need a feature descriptor after detecting keypoints?",
-    "choices": {
-      "A": "To describe each keypoint so similarity can be evaluated across images",
-      "B": "To increase image resolution",
-      "C": "To remove noise by smoothing",
-      "D": "To compute the histogram CDF"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "During SIFT keypoint refinement (as mentioned), candidates lying on edges are often discarded because:",
-    "choices": {
-      "A": "They are ambiguous: they are invariant to translations parallel to the edge direction",
-      "B": "They are always too dark",
-      "C": "They violate commutativity",
-      "D": "They increase JPEG artefacts"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In the SIFT descriptor, each subregion histogram bin vote is weighted by:",
-    "choices": {
-      "A": "Gradient magnitude",
-      "B": "Pixel intensity only",
-      "C": "PPI",
-      "D": "JPEG quality factor"
-    },
-    "answer": "A"
-  },
-  {
-    "section": "image-matching-interest-point-detection-and-feature-descriptors",
-    "question": "In SIFT, the orientation histogram per subregion typically has:",
-    "choices": {
-      "A": "4 bins",
-      "B": "8 bins (45° each)",
-      "C": "16 bins (22.5° each)",
-      "D": "128 bins"
-    },
-    "answer": "B"
-  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   {
     "section": "image-matching-interest-point-detection-and-feature-descriptors",
     "question": "A descriptor based on a histogram of gradient orientations helps mainly because it can combine:",
